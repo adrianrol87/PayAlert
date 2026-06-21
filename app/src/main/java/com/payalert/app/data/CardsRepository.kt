@@ -7,6 +7,7 @@ import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import com.payalert.app.widget.PayAlertWidgetRenderer
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.first
@@ -37,6 +38,7 @@ class CardsRepository(private val context: Context) {
         context.cardsDataStore.edit { preferences ->
             preferences[cardsKey] = encode(items)
         }
+        PayAlertWidgetRenderer.updateAllWidgets(context)
     }
 
     suspend fun getCards(): List<CreditCardItem> = cards.first()

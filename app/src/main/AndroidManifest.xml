@@ -17,6 +17,34 @@
         <receiver
             android:name=".notifications.NotificationActionReceiver"
             android:exported="false" />
+        <receiver
+            android:name=".widget.MonthSummaryWidgetProvider"
+            android:enabled="false"
+            android:exported="true"
+            android:label="@string/widget_upcoming_title"
+            android:permission="android.permission.BIND_APPWIDGET">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/month_summary_widget_info" />
+        </receiver>
+        <receiver
+            android:name=".widget.NextPaymentWidgetProvider"
+            android:enabled="false"
+            android:exported="true"
+            android:label="@string/widget_next_title"
+            android:permission="android.permission.BIND_APPWIDGET">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/next_payment_widget_info" />
+        </receiver>
         <activity
             android:name=".MainActivity"
             android:exported="true"

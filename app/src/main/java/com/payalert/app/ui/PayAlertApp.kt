@@ -2,7 +2,9 @@ package com.payalert.app.ui
 
 import android.Manifest
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Build
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -95,9 +97,12 @@ import androidx.lifecycle.LifecycleEventObserver
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccessTime
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.DarkMode
 import androidx.compose.material.icons.filled.CalendarMonth
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.CreditCard
+import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material.icons.filled.LightMode
 import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Notifications
@@ -110,8 +115,11 @@ import coil.compose.AsyncImage
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
+import com.google.android.play.core.review.ReviewManagerFactory
+import com.google.android.play.core.review.ReviewException
 import com.payalert.app.ads.AdMobConfig
 import com.payalert.app.ads.InterstitialAdController
+import com.payalert.app.data.AppPreferencesRepository
 import com.payalert.app.data.BankCatalog
 import com.payalert.app.data.CardsRepository
 import com.payalert.app.data.CreditCardItem
@@ -122,9 +130,13 @@ import com.payalert.app.data.OnboardingRepository
 import com.payalert.app.data.ProAccessRepository
 import com.payalert.app.data.StatusStyle
 import com.payalert.app.notifications.NotificationScheduler
+import com.payalert.app.widget.PayAlertWidgetRenderer
 import com.payalert.app.ui.theme.Accent
 import com.payalert.app.ui.theme.BackgroundBottom
 import com.payalert.app.ui.theme.BackgroundTop
+import com.payalert.app.ui.theme.DarkBackgroundBottom
+import com.payalert.app.ui.theme.DarkBackgroundTop
+import com.payalert.app.ui.theme.PayAlertTheme
 import com.payalert.app.ui.theme.CardSurface
 import com.payalert.app.ui.theme.StatusGray
 import com.payalert.app.ui.theme.StatusGreen
@@ -187,6 +199,33 @@ private data class OnboardingSlide(
 @Composable
 fun PayAlertApp() {
     val context = LocalContext.current
+    val appPreferencesRepository = remember(context) { AppPreferencesRepository(context) }
+    val isDarkMode by produceState(initialValue = false, appPreferencesRepository) {
+        appPreferencesRepository.isDarkMode.collect { value = it }
+    }
+    val scope = rememberCoroutineScope()
+
+    PayAlertTheme(darkTheme = isDarkMode) {
+        PayAlertAppContent(
+            isDarkMode = isDarkMode,
+            onToggleDarkMode = {
+                scope.launch {
+                    appPreferencesRepository.setDarkMode(!isDarkMode)
+                }
+            },
+            appPreferencesRepository = appPreferencesRepository,
+        )
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun PayAlertAppContent(
+    isDarkMode: Boolean,
+    onToggleDarkMode: () -> Unit,
+    appPreferencesRepository: AppPreferencesRepository,
+) {
+    val context = LocalContext.current
     val activity = context.findActivity()
     val repository = remember(context) { CardsRepository(context) }
     val notificationSettingsRepository = remember(context) { NotificationSettingsRepository(context) }
@@ -214,6 +253,9 @@ fun PayAlertApp() {
     val isPro by produceState(initialValue = false, proAccessRepository) {
         proAccessRepository.isPro.collect { value = it }
     }
+    LaunchedEffect(isPro) {
+        PayAlertWidgetRenderer.syncAvailability(context, isPro)
+    }
     val hasSeenOnboarding by onboardingRepository.hasSeenOnboarding.collectAsState(initial = false)
     val latestCards by rememberUpdatedState(cards)
 
@@ -222,6 +264,7 @@ fun PayAlertApp() {
     var showForm by rememberSaveable { mutableStateOf(false) }
     var showNotificationSettings by rememberSaveable { mutableStateOf(false) }
     var showProPanel by rememberSaveable { mutableStateOf(false) }
+    var showInfoPanel by rememberSaveable { mutableStateOf(false) }
     var deleteCandidateId by rememberSaveable { mutableStateOf<String?>(null) }
     var filter by rememberSaveable { mutableStateOf(CardsFilter.All) }
     var sortByDate by rememberSaveable { mutableStateOf(true) }
@@ -230,6 +273,23 @@ fun PayAlertApp() {
     var paymentAmountText by rememberSaveable { mutableStateOf("") }
     var paymentEntryMode by rememberSaveable { mutableStateOf<DebtEntryMode?>(null) }
     var notificationPermissionGranted by remember { mutableStateOf(context.hasNotificationPermission()) }
+    val openPrivacyPolicy = remember(context) {
+        { context.openExternalLink("https://adrianrol87.com.mx/privacy/privacy.html") }
+    }
+    val openTerms = remember(context) {
+        { context.openExternalLink("https://adrianrol87.com.mx/terms/terms.html") }
+    }
+    val appVersionName = remember(context) { context.appVersionName() }
+    val onPaidActionCompleted: () -> Unit = {
+        if (activity != null) {
+            scope.launch {
+                val paidCount = appPreferencesRepository.incrementPaidCount()
+                if (paidCount == 5 || paidCount == 15 || paidCount == 30) {
+                    launchInAppReview(activity)
+                }
+            }
+        }
+    }
     val permissionLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.RequestPermission(),
     ) { granted ->
@@ -269,10 +329,15 @@ fun PayAlertApp() {
     val openProPanel = {
         showForm = false
         showNotificationSettings = false
+        showInfoPanel = false
         showProPanel = true
-        scope.launch {
-            listState.animateScrollToItem(2)
-        }
+        Unit
+    }
+    val openInfoPanel = {
+        showForm = false
+        showNotificationSettings = false
+        showProPanel = false
+        showInfoPanel = true
         Unit
     }
     val openCardForm: (FormMode, CardFormState) -> Unit = { mode, state ->
@@ -280,10 +345,8 @@ fun PayAlertApp() {
         formState = state
         showNotificationSettings = false
         showProPanel = false
+        showInfoPanel = false
         showForm = true
-        scope.launch {
-            listState.animateScrollToItem(2)
-        }
     }
 
     Box(
@@ -291,7 +354,10 @@ fun PayAlertApp() {
             .fillMaxSize()
             .background(
                 Brush.verticalGradient(
-                    listOf(BackgroundTop, BackgroundBottom),
+                    listOf(
+                        if (isDarkMode) DarkBackgroundTop else BackgroundTop,
+                        if (isDarkMode) DarkBackgroundBottom else BackgroundBottom,
+                    ),
                 ),
             ),
     ) {
@@ -364,6 +430,30 @@ fun PayAlertApp() {
                                         showNotificationSettings = !showNotificationSettings
                                     },
                                 )
+                                DropdownMenuItem(
+                                    text = {
+                                        MenuItemLabel(
+                                            icon = Icons.Filled.Tune,
+                                            text = "Info",
+                                        )
+                                    },
+                                    onClick = {
+                                        showTopBarMenu = false
+                                        openInfoPanel()
+                                    },
+                                )
+                                DropdownMenuItem(
+                                    text = {
+                                        MenuItemLabel(
+                                            icon = if (isDarkMode) Icons.Filled.LightMode else Icons.Filled.DarkMode,
+                                            text = if (isDarkMode) "Modo claro" else "Modo oscuro",
+                                        )
+                                    },
+                                    onClick = {
+                                        showTopBarMenu = false
+                                        onToggleDarkMode()
+                                    },
+                                )
                             }
                         }
                     },
@@ -415,51 +505,6 @@ fun PayAlertApp() {
                     FilterRow(selected = filter, onSelected = { filter = it })
                 }
 
-                if (showForm) {
-                    item {
-                        AddOrEditCardForm(
-                            mode = formMode,
-                            initialState = formState,
-                            existingItems = cards,
-                            onSave = { updatedFormState ->
-                                val shouldShowInterstitial = !isPro
-                                formState = updatedFormState
-                                val item = updatedFormState.toCardItem()
-                                val itemWithOrder = if (formMode == FormMode.Add) {
-                                    item.copy(manualOrder = nextManualOrder(cards))
-                                } else {
-                                    item.copy(
-                                        manualOrder = cards.firstOrNull { it.id == updatedFormState.id }?.manualOrder ?: item.manualOrder,
-                                    )
-                                }
-
-                                val nextCards = if (formMode == FormMode.Edit && updatedFormState.id != null) {
-                                    cards.map { existing ->
-                                        if (existing.id == updatedFormState.id) itemWithOrder else existing
-                                    }
-                                } else {
-                                    cards + itemWithOrder
-                                }
-
-                                scope.launch {
-                                    repository.saveCards(nextCards)
-                                }
-                                if (shouldShowInterstitial && activity != null) {
-                                    InterstitialAdController.showIfAvailable(activity)
-                                }
-                                showForm = false
-                                formMode = FormMode.Add
-                                formState = CardFormState()
-                            },
-                            onCancel = {
-                                showForm = false
-                                formMode = FormMode.Add
-                                formState = CardFormState()
-                            },
-                        )
-                    }
-                }
-
                 if (cards.isEmpty()) {
                     item {
                         EmptyStateCard()
@@ -490,6 +535,7 @@ fun PayAlertApp() {
                                     scope.launch {
                                         repository.saveCards(nextCards)
                                     }
+                                    onPaidActionCompleted()
                                 }
                             },
                             onMarkPending = {
@@ -525,6 +571,51 @@ fun PayAlertApp() {
                 item {
                     Spacer(Modifier.height(20.dp))
                 }
+                }
+            }
+
+            if (showForm) {
+                FullScreenMenuOverlay {
+                    AddOrEditCardForm(
+                        mode = formMode,
+                        initialState = formState,
+                        existingItems = cards,
+                        onSave = { updatedFormState ->
+                            val shouldShowInterstitial = !isPro
+                            formState = updatedFormState
+                            val item = updatedFormState.toCardItem()
+                            val itemWithOrder = if (formMode == FormMode.Add) {
+                                item.copy(manualOrder = nextManualOrder(cards))
+                            } else {
+                                item.copy(
+                                    manualOrder = cards.firstOrNull { it.id == updatedFormState.id }?.manualOrder ?: item.manualOrder,
+                                )
+                            }
+
+                            val nextCards = if (formMode == FormMode.Edit && updatedFormState.id != null) {
+                                cards.map { existing ->
+                                    if (existing.id == updatedFormState.id) itemWithOrder else existing
+                                }
+                            } else {
+                                cards + itemWithOrder
+                            }
+
+                            scope.launch {
+                                repository.saveCards(nextCards)
+                            }
+                            if (shouldShowInterstitial && activity != null) {
+                                InterstitialAdController.showIfAvailable(activity)
+                            }
+                            showForm = false
+                            formMode = FormMode.Add
+                            formState = CardFormState()
+                        },
+                        onCancel = {
+                            showForm = false
+                            formMode = FormMode.Add
+                            formState = CardFormState()
+                        },
+                    )
                 }
             }
 
@@ -565,6 +656,17 @@ fun PayAlertApp() {
                             }
                         },
                         onClose = { showNotificationSettings = false },
+                    )
+                }
+            }
+
+            if (showInfoPanel) {
+                FullScreenMenuOverlay {
+                    InfoPanel(
+                        versionName = appVersionName,
+                        onOpenPrivacy = openPrivacyPolicy,
+                        onOpenTerms = openTerms,
+                        onClose = { showInfoPanel = false },
                     )
                 }
             }
@@ -645,6 +747,7 @@ fun PayAlertApp() {
                             scope.launch {
                                 repository.saveCards(nextCards)
                             }
+                            onPaidActionCompleted()
                             paymentTargetId = null
                             paymentAmountText = ""
                             paymentEntryMode = null
@@ -674,6 +777,7 @@ fun PayAlertApp() {
                             scope.launch {
                                 repository.saveCards(nextCards)
                             }
+                            onPaidActionCompleted()
                             paymentTargetId = null
                             paymentAmountText = ""
                             paymentEntryMode = null
@@ -775,6 +879,13 @@ fun PayAlertApp() {
                             scope.launch {
                                 repository.saveCards(nextCards)
                             }
+                            val willBePaid = when (entryMode) {
+                                DebtEntryMode.PartialPayment -> (currentDebt - amount).coerceAtLeast(0.0) == 0.0
+                                DebtEntryMode.ReplacementTotal -> true
+                            }
+                            if (willBePaid) {
+                                onPaidActionCompleted()
+                            }
                         }
                         paymentTargetId = null
                         paymentAmountText = ""
@@ -810,7 +921,7 @@ private fun PayAlertSplashOverlay() {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFF102A43)),
+            .background(Color(0xFF14203A)),
         contentAlignment = Alignment.Center,
     ) {
         Column(
@@ -818,9 +929,9 @@ private fun PayAlertSplashOverlay() {
             verticalArrangement = Arrangement.spacedBy(18.dp),
         ) {
             Image(
-                painter = painterResource(id = com.payalert.app.R.drawable.ic_launcher_foreground),
+                painter = painterResource(id = com.payalert.app.R.drawable.ic_launcher_background),
                 contentDescription = "PayAlert",
-                modifier = Modifier.size(180.dp),
+                modifier = Modifier.size(210.dp),
                 contentScale = ContentScale.Fit,
             )
             Text(
@@ -867,8 +978,8 @@ private fun OnboardingFlow(
                 subtitle = "Desbloquea mas tarjetas, una vista premium y una experiencia sin anuncios.",
                 highlights = listOf(
                     "Mas capacidad para tus tarjetas",
+                    "Widgets exclusivos en Android",
                     "Dashboard premium",
-                    "Base lista para crecer",
                 ),
             ),
         )
@@ -1039,7 +1150,7 @@ private fun HomeDashboard(
                     Column(modifier = Modifier.weight(1f)) {
                         Text("Plan Free", fontWeight = FontWeight.Bold, color = Color(0xFF7C5A00))
                         Text(
-                            "Te quedan $freeSlotsRemaining espacio(s). Pro desbloquea tarjetas ilimitadas, vista premium y futuras funciones avanzadas.",
+                            "Te quedan $freeSlotsRemaining espacio(s). Pro desbloquea tarjetas ilimitadas, widgets y una vista premium.",
                             color = Color(0xFF7C5A00),
                             style = MaterialTheme.typography.bodySmall,
                         )
@@ -1226,9 +1337,9 @@ private fun ProPanel(
                     Text("Pago unico. Sin suscripcion mensual.", color = Color(0xFF64748B))
 
                     ProBenefit("Tarjetas ilimitadas")
+                    ProBenefit("Widgets de PayAlert solo para Pro")
                     ProBenefit("Vista mas premium y enfocada en deuda")
-                    ProBenefit("Funciones avanzadas listas para conectar a Billing real")
-                    ProBenefit("Base lista para OCR, widgets y extras Pro")
+                    ProBenefit("Desbloqueo listo para conectar a compra real")
                 }
             }
 
@@ -1321,6 +1432,75 @@ private fun ProBenefit(text: String) {
     ) {
         Icon(Icons.Filled.CheckCircle, contentDescription = null, tint = StatusGreen)
         Text(text)
+    }
+}
+
+@Composable
+private fun InfoPanel(
+    versionName: String,
+    onOpenPrivacy: () -> Unit,
+    onOpenTerms: () -> Unit,
+    onClose: () -> Unit,
+) {
+    Surface(
+        shape = RoundedCornerShape(28.dp),
+        color = Color.White.copy(alpha = 0.96f),
+        tonalElevation = 10.dp,
+        modifier = Modifier.fillMaxWidth(),
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(22.dp),
+            verticalArrangement = Arrangement.spacedBy(14.dp),
+        ) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(10.dp),
+                ) {
+                    Icon(Icons.Filled.Tune, contentDescription = null, tint = Accent)
+                    Text("Info", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+                }
+            }
+
+            Surface(
+                shape = RoundedCornerShape(22.dp),
+                color = Color(0xFFF7FAFC),
+                tonalElevation = 0.dp,
+            ) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(16.dp),
+                    verticalArrangement = Arrangement.spacedBy(8.dp),
+                ) {
+                    Text("PayAlert", style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
+                    Text("Version $versionName", color = Color(0xFF475569))
+                    Text(
+                        "Aqui puedes revisar los enlaces legales de la app.",
+                        color = Color(0xFF64748B),
+                        style = MaterialTheme.typography.bodySmall,
+                    )
+                }
+            }
+
+            Button(onClick = onOpenPrivacy, modifier = Modifier.fillMaxWidth()) {
+                Text("Privacidad")
+            }
+
+            Button(onClick = onOpenTerms, modifier = Modifier.fillMaxWidth()) {
+                Text("Terminos")
+            }
+
+            TextButton(onClick = onClose, modifier = Modifier.fillMaxWidth()) {
+                Text("Cerrar")
+            }
+        }
     }
 }
 
@@ -1578,7 +1758,7 @@ private fun CardRow(
             .clickable(onClick = onEdit),
         shape = RoundedCornerShape(24.dp),
         colors = CardDefaults.cardColors(containerColor = CardSurface.copy(alpha = 0.95f)),
-        border = BorderStroke(6.dp, borderColor),
+        border = BorderStroke(4.dp, borderColor),
         elevation = CardDefaults.cardElevation(
             defaultElevation = if (isManualMode && abs(dragOffsetY) > 0f) 18.dp else 12.dp,
         ),
@@ -1732,21 +1912,53 @@ private fun AddOrEditCardForm(
         tonalElevation = 6.dp,
         modifier = Modifier
             .fillMaxWidth()
-            .heightIn(max = 720.dp),
+            .heightIn(max = 760.dp),
     ) {
         Column(
             modifier = Modifier
                 .fillMaxWidth()
                 .verticalScroll(rememberScrollState())
                 .padding(18.dp),
-            verticalArrangement = Arrangement.spacedBy(12.dp),
+            verticalArrangement = Arrangement.spacedBy(14.dp),
         ) {
-            Text(
-                if (mode == FormMode.Add) "Agregar tarjeta" else "Editar tarjeta",
-                style = MaterialTheme.typography.titleLarge,
-                fontWeight = FontWeight.Bold,
-            )
-            Text("Las tarjetas quedan guardadas localmente en el dispositivo.", color = Color(0xFF475569))
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(10.dp),
+                    verticalAlignment = Alignment.CenterVertically,
+                ) {
+                    Icon(
+                        imageVector = if (mode == FormMode.Add) Icons.Filled.Add else Icons.Filled.Edit,
+                        contentDescription = null,
+                        tint = Accent,
+                    )
+                    Text(
+                        if (mode == FormMode.Add) "Agregar tarjeta" else "Editar tarjeta",
+                        style = MaterialTheme.typography.titleLarge,
+                        fontWeight = FontWeight.Bold,
+                    )
+                }
+                TextButton(onClick = onCancel) {
+                    Text("Cerrar")
+                }
+            }
+
+            Surface(
+                shape = RoundedCornerShape(18.dp),
+                color = Color(0xFFF7FAFC),
+                tonalElevation = 0.dp,
+            ) {
+                Text(
+                    "Las tarjetas quedan guardadas localmente en el dispositivo. Captura banco, terminacion, deuda y fechas del ciclo actual.",
+                    color = Color(0xFF475569),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 14.dp, vertical = 12.dp),
+                )
+            }
 
             BankDropdown(
                 label = "Banco",
@@ -2089,6 +2301,18 @@ private fun Context.hasNotificationPermission(): Boolean {
         ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED
 }
 
+private fun Context.openExternalLink(url: String) {
+    val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url)).apply {
+        addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+    }
+    startActivity(intent)
+}
+
+private fun Context.appVersionName(): String {
+    val packageInfo = packageManager.getPackageInfo(packageName, 0)
+    return packageInfo.versionName ?: "1.0"
+}
+
 private tailrec fun Context.findActivity(): android.app.Activity? {
     return when (this) {
         is android.app.Activity -> this
@@ -2197,6 +2421,19 @@ private fun buildDebtChartSlices(entries: List<DebtChartEntry>): List<DebtChartS
             sweepAngle = sweepAngle,
         ).also {
             runningAngle += sweepAngle
+        }
+    }
+}
+
+private fun launchInAppReview(activity: android.app.Activity) {
+    val reviewManager = ReviewManagerFactory.create(activity)
+    reviewManager.requestReviewFlow().addOnCompleteListener { requestTask ->
+        if (requestTask.isSuccessful) {
+            val reviewInfo = requestTask.result
+            reviewManager.launchReviewFlow(activity, reviewInfo)
+        } else {
+            val errorCode = (requestTask.exception as? ReviewException)?.errorCode
+            android.util.Log.w("PayAlertReview", "No se pudo abrir in-app review. Codigo: $errorCode")
         }
     }
 }

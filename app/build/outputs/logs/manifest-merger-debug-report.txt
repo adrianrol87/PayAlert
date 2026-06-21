@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:2:1-32:12
+ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:2:1-60:12
 MERGED from [io.coil-kt:coil-compose:2.7.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\ec0335d89241424a100c4547a090f5ac\transformed\coil-compose-2.7.0\AndroidManifest.xml:2:1-7:12
 MERGED from [io.coil-kt:coil-compose-base:2.7.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\86042c361821925a7b3f8e0f917d5ae0\transformed\coil-compose-base-2.7.0\AndroidManifest.xml:2:1-7:12
 MERGED from [io.coil-kt:coil:2.7.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\1b24c8760fc4f1ddf5ba3dcfc2199992\transformed\coil-2.7.0\AndroidManifest.xml:2:1-7:12
@@ -11,6 +11,7 @@ MERGED from [io.coil-kt:coil-base:2.7.0] C:\Users\adrianrol87\.gradle\caches\9.0
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\239d80b1445c35421f8ccc8e33c07e1f\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c0a4ce5cf5d278c974f0922858288196\transformed\appcompat-1.7.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-ads:23.6.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\ce1faee4daa76aad7e821e39436966af\transformed\play-services-ads-23.6.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.play:review-ktx:2.0.2] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\b60b2d678a288e5b27eb962f0b53fd55\transformed\review-ktx-2.0.2\AndroidManifest.xml:2:1-14:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\56b90bcd43d7695f20fb6dd3b6c5ef6f\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common:2.8.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\3a9df2fbf27f4939bd9f06783992d08c\transformed\navigation-common-2.8.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.8.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\119d0647b2ee56f0c6184f246f229336\transformed\navigation-runtime-2.8.0\AndroidManifest.xml:17:1-22:12
@@ -33,6 +34,7 @@ MERGED from [androidx.compose.ui:ui-text-android:1.7.3] C:\Users\adrianrol87\.gr
 MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.3] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\e9b8ef9a8fcf9f77fcb4ba39eaf40b2e\transformed\ui-tooling-preview-release\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.compose.ui:ui-tooling-android:1.7.3] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\11a71d7f691c49507d55a0605f8c65c8\transformed\ui-tooling-release\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.compose.ui:ui-test-manifest:1.7.3] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\fad355537cd8f51020f7b2e75ee54ee2\transformed\ui-test-manifest-1.7.3\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.play:review:2.0.2] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\7c5ecc7393657914b4cc400ed74e5252\transformed\review-2.0.2\AndroidManifest.xml:2:1-14:12
 MERGED from [com.google.android.gms:play-services-ads-lite:23.6.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\7a15bd2476e8fca47be6cdccf350873e\transformed\play-services-ads-lite-23.6.0\AndroidManifest.xml:17:1-112:12
 MERGED from [com.google.android.gms:play-services-ads-base:23.6.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\329b69c775d517c4c720b5607c5934ed\transformed\play-services-ads-base-23.6.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\759b5e55d6ce5c522053840435fef954\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:17:1-27:12
@@ -103,6 +105,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\adrianrol87\.gradl
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\f7600a77daa337e98dd2e49f423f4f1b\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c7fb648bcb643bf14b3c006bbe69f54c\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.exifinterface:exifinterface:1.3.7] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\7a3d616522cfc83cc1589b94f0d83169\transformed\exifinterface-1.3.7\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.play:core-common:2.0.4] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c4a220b5f53c5ae5e676aa988ac58126\transformed\core-common-2.0.4\AndroidManifest.xml:2:1-21:12
 	package
 		INJECTED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -134,12 +137,16 @@ ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\A
 	android:name
 		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:5:22-74
 application
-ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:7:5-30:19
-INJECTED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:7:5-30:19
+ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:7:5-58:19
+INJECTED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:7:5-58:19
+MERGED from [com.google.android.play:review-ktx:2.0.2] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\b60b2d678a288e5b27eb962f0b53fd55\transformed\review-ktx-2.0.2\AndroidManifest.xml:11:5-12:19
+MERGED from [com.google.android.play:review-ktx:2.0.2] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\b60b2d678a288e5b27eb962f0b53fd55\transformed\review-ktx-2.0.2\AndroidManifest.xml:11:5-12:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.7.3] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\11a71d7f691c49507d55a0605f8c65c8\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.7.3] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\11a71d7f691c49507d55a0605f8c65c8\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.7.3] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\fad355537cd8f51020f7b2e75ee54ee2\transformed\ui-test-manifest-1.7.3\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.7.3] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\fad355537cd8f51020f7b2e75ee54ee2\transformed\ui-test-manifest-1.7.3\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.play:review:2.0.2] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\7c5ecc7393657914b4cc400ed74e5252\transformed\review-2.0.2\AndroidManifest.xml:11:5-12:19
+MERGED from [com.google.android.play:review:2.0.2] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\7c5ecc7393657914b4cc400ed74e5252\transformed\review-2.0.2\AndroidManifest.xml:11:5-12:19
 MERGED from [com.google.android.gms:play-services-ads-lite:23.6.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\7a15bd2476e8fca47be6cdccf350873e\transformed\play-services-ads-lite-23.6.0\AndroidManifest.xml:70:5-110:19
 MERGED from [com.google.android.gms:play-services-ads-lite:23.6.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\7a15bd2476e8fca47be6cdccf350873e\transformed\play-services-ads-lite-23.6.0\AndroidManifest.xml:70:5-110:19
 MERGED from [com.google.android.gms:play-services-ads-base:23.6.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\329b69c775d517c4c720b5607c5934ed\transformed\play-services-ads-base-23.6.0\AndroidManifest.xml:7:5-20
@@ -174,6 +181,8 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ad
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\f5bf05e923596814f41e53a31f9f17c7\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\89343f5c5159a4b2c966669366890d2b\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\89343f5c5159a4b2c966669366890d2b\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [com.google.android.play:core-common:2.0.4] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c4a220b5f53c5ae5e676aa988ac58126\transformed\core-common-2.0.4\AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.android.play:core-common:2.0.4] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c4a220b5f53c5ae5e676aa988ac58126\transformed\core-common-2.0.4\AndroidManifest.xml:11:5-19:19
 	android:extractNativeLibs
 		INJECTED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
@@ -202,24 +211,60 @@ ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\A
 		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:19:13-37
 	android:name
 		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:18:13-69
-activity#com.payalert.app.MainActivity
-ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:20:9-29:20
-	android:exported
+receiver#com.payalert.app.widget.MonthSummaryWidgetProvider
+ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:20:9-33:20
+	android:enabled
 		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:22:13-36
+	android:label
+		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:24:13-58
+	android:exported
+		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:23:13-36
+	android:permission
+		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:25:13-67
+	android:name
+		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:21:13-62
+intent-filter#action:name:android.appwidget.action.APPWIDGET_UPDATE
+ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:26:13-28:29
+action#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:27:17-84
+	android:name
+		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:27:25-81
+meta-data#android.appwidget.provider
+ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:30:13-32:69
+	android:resource
+		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:32:17-66
+	android:name
+		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:31:17-58
+receiver#com.payalert.app.widget.NextPaymentWidgetProvider
+ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:34:9-47:20
+	android:enabled
+		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:36:13-36
+	android:label
+		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:38:13-54
+	android:exported
+		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:39:13-67
+	android:name
+		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:35:13-61
+activity#com.payalert.app.MainActivity
+ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:48:9-57:20
+	android:exported
+		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:50:13-36
 	android:theme
-		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:23:13-59
+		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:51:13-59
 	android:name
-		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:21:13-41
+		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:49:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:24:13-28:29
+ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:52:13-56:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:25:17-69
+ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:53:17-69
 	android:name
-		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:53:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:27:17-77
+ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:55:17-77
 	android:name
-		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:27:27-74
+		ADDED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml:55:27-74
 uses-sdk
 INJECTED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\AndroidManifest.xml
@@ -238,6 +283,8 @@ MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\adrianrol87\.gradle\ca
 MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c0a4ce5cf5d278c974f0922858288196\transformed\appcompat-1.7.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-ads:23.6.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\ce1faee4daa76aad7e821e39436966af\transformed\play-services-ads-23.6.0\AndroidManifest.xml:21:5-23:52
 MERGED from [com.google.android.gms:play-services-ads:23.6.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\ce1faee4daa76aad7e821e39436966af\transformed\play-services-ads-23.6.0\AndroidManifest.xml:21:5-23:52
+MERGED from [com.google.android.play:review-ktx:2.0.2] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\b60b2d678a288e5b27eb962f0b53fd55\transformed\review-ktx-2.0.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.play:review-ktx:2.0.2] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\b60b2d678a288e5b27eb962f0b53fd55\transformed\review-ktx-2.0.2\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\56b90bcd43d7695f20fb6dd3b6c5ef6f\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\56b90bcd43d7695f20fb6dd3b6c5ef6f\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-common:2.8.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\3a9df2fbf27f4939bd9f06783992d08c\transformed\navigation-common-2.8.0\AndroidManifest.xml:20:5-44
@@ -282,6 +329,8 @@ MERGED from [androidx.compose.ui:ui-tooling-android:1.7.3] C:\Users\adrianrol87\
 MERGED from [androidx.compose.ui:ui-tooling-android:1.7.3] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\11a71d7f691c49507d55a0605f8c65c8\transformed\ui-tooling-release\AndroidManifest.xml:20:5-44
 MERGED from [androidx.compose.ui:ui-test-manifest:1.7.3] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\fad355537cd8f51020f7b2e75ee54ee2\transformed\ui-test-manifest-1.7.3\AndroidManifest.xml:20:5-44
 MERGED from [androidx.compose.ui:ui-test-manifest:1.7.3] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\fad355537cd8f51020f7b2e75ee54ee2\transformed\ui-test-manifest-1.7.3\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.play:review:2.0.2] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\7c5ecc7393657914b4cc400ed74e5252\transformed\review-2.0.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.play:review:2.0.2] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\7c5ecc7393657914b4cc400ed74e5252\transformed\review-2.0.2\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.gms:play-services-ads-lite:23.6.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\7a15bd2476e8fca47be6cdccf350873e\transformed\play-services-ads-lite-23.6.0\AndroidManifest.xml:21:5-44
 MERGED from [com.google.android.gms:play-services-ads-lite:23.6.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\7a15bd2476e8fca47be6cdccf350873e\transformed\play-services-ads-lite-23.6.0\AndroidManifest.xml:21:5-44
 MERGED from [com.google.android.gms:play-services-ads-base:23.6.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\329b69c775d517c4c720b5607c5934ed\transformed\play-services-ads-base-23.6.0\AndroidManifest.xml:5:5-44
@@ -422,6 +471,8 @@ MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\adrianrol87\.gradle
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c7fb648bcb643bf14b3c006bbe69f54c\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.exifinterface:exifinterface:1.3.7] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\7a3d616522cfc83cc1589b94f0d83169\transformed\exifinterface-1.3.7\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.exifinterface:exifinterface:1.3.7] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\7a3d616522cfc83cc1589b94f0d83169\transformed\exifinterface-1.3.7\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.play:core-common:2.0.4] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c4a220b5f53c5ae5e676aa988ac58126\transformed\core-common-2.0.4\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.play:core-common:2.0.4] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c4a220b5f53c5ae5e676aa988ac58126\transformed\core-common-2.0.4\AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from [com.google.android.gms:play-services-ads:23.6.0] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\ce1faee4daa76aad7e821e39436966af\transformed\play-services-ads-23.6.0\AndroidManifest.xml:23:9-49
 	android:targetSdkVersion
@@ -909,3 +960,13 @@ action#androidx.profileinstaller.action.BENCHMARK_OPERATION
 ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\cbd06524007b5682667bbfc457c6e81a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
 	android:name
 		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\cbd06524007b5682667bbfc457c6e81a\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+activity#com.google.android.play.core.common.PlayCoreDialogWrapperActivity
+ADDED from [com.google.android.play:core-common:2.0.4] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c4a220b5f53c5ae5e676aa988ac58126\transformed\core-common-2.0.4\AndroidManifest.xml:14:9-18:65
+	android:stateNotNeeded
+		ADDED from [com.google.android.play:core-common:2.0.4] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c4a220b5f53c5ae5e676aa988ac58126\transformed\core-common-2.0.4\AndroidManifest.xml:17:13-42
+	android:exported
+		ADDED from [com.google.android.play:core-common:2.0.4] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c4a220b5f53c5ae5e676aa988ac58126\transformed\core-common-2.0.4\AndroidManifest.xml:16:13-37
+	android:theme
+		ADDED from [com.google.android.play:core-common:2.0.4] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c4a220b5f53c5ae5e676aa988ac58126\transformed\core-common-2.0.4\AndroidManifest.xml:18:13-62
+	android:name
+		ADDED from [com.google.android.play:core-common:2.0.4] C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c4a220b5f53c5ae5e676aa988ac58126\transformed\core-common-2.0.4\AndroidManifest.xml:15:13-93

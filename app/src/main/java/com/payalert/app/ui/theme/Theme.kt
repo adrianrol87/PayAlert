@@ -18,9 +18,12 @@ private val DarkScheme = darkColorScheme(
 )
 
 @Composable
-fun PayAlertTheme(content: @Composable () -> Unit) {
+fun PayAlertTheme(
+    darkTheme: Boolean = false,
+    content: @Composable () -> Unit,
+) {
     MaterialTheme(
-        colorScheme = LightScheme,
+        colorScheme = if (darkTheme) DarkScheme else LightScheme,
         typography = Typography,
         content = content,
     )

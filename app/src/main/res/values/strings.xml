@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">PayAlert</string>
+    <string name="widget_next_title">Proximo pago</string>
+    <string name="widget_summary_title">Resumen del mes</string>
+    <string name="widget_upcoming_title">Proximos pagos</string>
+    <string name="widget_due_date_format">Vence %1$s</string>
+    <string name="widget_due_short_format">Vence %1$s</string>
+    <string name="widget_due_today_short">Vence hoy</string>
+    <string name="widget_overdue_short">Vencida</string>
+    <string name="widget_all_clear">Todo al corriente</string>
+    <string name="widget_no_pending_cards">No hay tarjetas pendientes</string>
+    <string name="widget_enjoy_message">Disfruta tu tranquilidad</string>
+    <string name="widget_no_amount">Sin deuda</string>
+    <string name="widget_active_label">Activas</string>
+    <string name="widget_paid_label">Pagadas</string>
+    <string name="widget_due_soon_label">Por vencer</string>
+    <string name="widget_overdue_label">Vencidas</string>
+    <string name="widget_total_debt_label">Deuda total</string>
 </resources>

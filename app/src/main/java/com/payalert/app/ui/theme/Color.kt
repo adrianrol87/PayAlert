@@ -4,6 +4,8 @@ import androidx.compose.ui.graphics.Color
 
 val BackgroundTop = Color(0xFF102A43)
 val BackgroundBottom = Color(0xFFF0F4F8)
+val DarkBackgroundTop = Color(0xFF08121C)
+val DarkBackgroundBottom = Color(0xFF0F1F2E)
 val Accent = Color(0xFF0E7490)
 val AccentSoft = Color(0xFFD7F3F8)
 val CardSurface = Color(0xFFFDFEFE)
