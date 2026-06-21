@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "com.payalert.app-debug-79:/drawable_splash_empty_icon.xml.flat",
+        "source": "com.payalert.app-main-81:/drawable/splash_empty_icon.xml"
+    },
+    {
+        "merged": "com.payalert.app-debug-79:/xml_data_extraction_rules.xml.flat",
+        "source": "com.payalert.app-main-81:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.payalert.app-debug-79:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.payalert.app-main-81:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.payalert.app-debug-79:/drawable_ic_launcher_foreground.png.flat",
+        "source": "com.payalert.app-main-81:/drawable/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.payalert.app-debug-79:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.payalert.app-main-81:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.payalert.app-debug-79:/drawable_ic_launcher_background.png.flat",
+        "source": "com.payalert.app-main-81:/drawable/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.payalert.app-debug-79:/xml_backup_rules.xml.flat",
+        "source": "com.payalert.app-main-81:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.payalert.app-debug-79:/drawable_ic_launcher_transparent_foreground.xml.flat",
+        "source": "com.payalert.app-main-81:/drawable/ic_launcher_transparent_foreground.xml"
+    }
+]
