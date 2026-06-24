@@ -5,14 +5,14 @@ plugins {
 }
 
 android {
-    namespace = "com.payalert.app"
+    namespace = "com.adrianrol87.payalert"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.payalert.app"
+        applicationId = "com.adrianrol87.payalert"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
+        versionCode = 2
         versionName = "1.4"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

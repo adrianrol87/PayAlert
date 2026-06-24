@@ -15,6 +15,8 @@
     <string name="widget_overdue_label">Vencidas</string>
     <string name="widget_overdue_short">Vencida</string>
     <string name="widget_paid_label">Pagadas</string>
+    <string name="widget_pro_locked_message">Activa Pro en la app para usar este widget.</string>
+    <string name="widget_pro_locked_title">Disponible en PayAlert Pro</string>
     <string name="widget_summary_title">Resumen del mes</string>
     <string name="widget_total_debt_label">Deuda total</string>
     <string name="widget_upcoming_title">Proximos pagos</string>

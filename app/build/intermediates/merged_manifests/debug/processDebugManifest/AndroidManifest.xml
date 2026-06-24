@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.payalert.app"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    package="com.adrianrol87.payalert"
+    android:versionCode="2"
+    android:versionName="1.4" >
 
     <uses-sdk
         android:minSdkVersion="26"
@@ -58,10 +58,10 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <permission
-        android:name="com.payalert.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.adrianrol87.payalert.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.payalert.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.adrianrol87.payalert.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:allowBackup="true"
@@ -83,7 +83,6 @@
             android:exported="false" />
         <receiver
             android:name="com.payalert.app.widget.MonthSummaryWidgetProvider"
-            android:enabled="false"
             android:exported="true"
             android:label="@string/widget_upcoming_title"
             android:permission="android.permission.BIND_APPWIDGET" >
@@ -97,7 +96,6 @@
         </receiver>
         <receiver
             android:name="com.payalert.app.widget.NextPaymentWidgetProvider"
-            android:enabled="false"
             android:exported="true"
             android:label="@string/widget_next_title"
             android:permission="android.permission.BIND_APPWIDGET" >
@@ -149,7 +147,7 @@
 
         <provider
             android:name="com.google.android.gms.ads.MobileAdsInitProvider"
-            android:authorities="com.payalert.app.mobileadsinitprovider"
+            android:authorities="com.adrianrol87.payalert.mobileadsinitprovider"
             android:exported="false"
             android:initOrder="100" />
 
@@ -185,7 +183,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.payalert.app.androidx-startup"
+            android:authorities="com.adrianrol87.payalert.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.work.WorkManagerInitializer"

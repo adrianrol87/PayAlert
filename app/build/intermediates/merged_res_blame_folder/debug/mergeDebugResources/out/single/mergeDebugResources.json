@@ -1,150 +1,150 @@
 [
     {
-        "merged": "com.payalert.app-debug-81:/drawable_widget_status_gray.xml.flat",
-        "source": "com.payalert.app-main-83:/drawable/widget_status_gray.xml"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/drawable_splash_empty_icon.xml.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/drawable/splash_empty_icon.xml"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-xhdpi_ic_launcher_background.png.flat",
-        "source": "com.payalert.app-main-83:/mipmap-xhdpi/ic_launcher_background.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-xxhdpi_ic_launcher_background.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-xxhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-xxhdpi_ic_launcher_background.png.flat",
-        "source": "com.payalert.app-main-83:/mipmap-xxhdpi/ic_launcher_background.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-xhdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-xhdpi/ic_launcher_monochrome.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-mdpi_ic_launcher_monochrome.png.flat",
-        "source": "com.payalert.app-main-83:/mipmap-mdpi/ic_launcher_monochrome.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-mdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.payalert.app-main-83:/mipmap-hdpi/ic_launcher.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/drawable_widget_status_red.xml.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/drawable/widget_status_red.xml"
     },
     {
-        "merged": "com.payalert.app-debug-81:/xml_next_payment_widget_info.xml.flat",
-        "source": "com.payalert.app-main-83:/xml/next_payment_widget_info.xml"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/drawable_widget_status_gray.xml.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/drawable/widget_status_gray.xml"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.payalert.app-main-83:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-xxxhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "com.payalert.app-main-83:/mipmap-xxxhdpi/ic_launcher_background.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/drawable_widget_status_green.xml.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/drawable/widget_status_green.xml"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "com.payalert.app-main-83:/mipmap-xhdpi/ic_launcher_foreground.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/xml_backup_rules.xml.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.payalert.app-debug-81:/layout_widget_next_payment.xml.flat",
-        "source": "com.payalert.app-main-83:/layout/widget_next_payment.xml"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-mdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-mdpi/ic_launcher_monochrome.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "com.payalert.app-main-83:/mipmap-mdpi/ic_launcher_foreground.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.payalert.app-main-83:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/layout_widget_next_payment.xml.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/layout/widget_next_payment.xml"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.payalert.app-main-83:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-mdpi_ic_launcher_background.png.flat",
-        "source": "com.payalert.app-main-83:/mipmap-mdpi/ic_launcher_background.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/xml_data_extraction_rules.xml.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-hdpi_ic_launcher_monochrome.png.flat",
-        "source": "com.payalert.app-main-83:/mipmap-hdpi/ic_launcher_monochrome.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/drawable_widget_status_orange.xml.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/drawable/widget_status_orange.xml"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "com.payalert.app-main-83:/mipmap-hdpi/ic_launcher_foreground.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/drawable_ic_launcher_transparent_foreground.xml.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/drawable/ic_launcher_transparent_foreground.xml"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-hdpi_ic_launcher_background.png.flat",
-        "source": "com.payalert.app-main-83:/mipmap-hdpi/ic_launcher_background.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/drawable_ic_launcher_background.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/drawable/ic_launcher_background.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/xml_data_extraction_rules.xml.flat",
-        "source": "com.payalert.app-main-83:/xml/data_extraction_rules.xml"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-xhdpi_ic_launcher_monochrome.png.flat",
-        "source": "com.payalert.app-main-83:/mipmap-xhdpi/ic_launcher_monochrome.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/drawable_ic_launcher_transparent_foreground.xml.flat",
-        "source": "com.payalert.app-main-83:/drawable/ic_launcher_transparent_foreground.xml"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-hdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-hdpi/ic_launcher_monochrome.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "com.payalert.app-main-83:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-hdpi_ic_launcher_background.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-hdpi/ic_launcher_background.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/drawable_widget_status_orange.xml.flat",
-        "source": "com.payalert.app-main-83:/drawable/widget_status_orange.xml"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/drawable_ic_launcher_foreground.png.flat",
-        "source": "com.payalert.app-main-83:/drawable/ic_launcher_foreground.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/drawable_ic_launcher_foreground.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/drawable/ic_launcher_foreground.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.payalert.app-main-83:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/xml_month_summary_widget_info.xml.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/xml/month_summary_widget_info.xml"
     },
     {
-        "merged": "com.payalert.app-debug-81:/drawable_splash_empty_icon.xml.flat",
-        "source": "com.payalert.app-main-83:/drawable/splash_empty_icon.xml"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-xxhdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-xxhdpi/ic_launcher_monochrome.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.payalert.app-main-83:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/xml_next_payment_widget_info.xml.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/xml/next_payment_widget_info.xml"
     },
     {
-        "merged": "com.payalert.app-debug-81:/drawable_widget_status_red.xml.flat",
-        "source": "com.payalert.app-main-83:/drawable/widget_status_red.xml"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-xxxhdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-xxxhdpi/ic_launcher_monochrome.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "com.payalert.app-main-83:/mipmap-xxhdpi/ic_launcher_foreground.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-xxxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/xml_backup_rules.xml.flat",
-        "source": "com.payalert.app-main-83:/xml/backup_rules.xml"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-mdpi/ic_launcher_background.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-xxhdpi_ic_launcher_monochrome.png.flat",
-        "source": "com.payalert.app-main-83:/mipmap-xxhdpi/ic_launcher_monochrome.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-xhdpi_ic_launcher_background.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-xhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-xxxhdpi_ic_launcher_monochrome.png.flat",
-        "source": "com.payalert.app-main-83:/mipmap-xxxhdpi/ic_launcher_monochrome.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.payalert.app-debug-81:/drawable_widget_card_background.xml.flat",
-        "source": "com.payalert.app-main-83:/drawable/widget_card_background.xml"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-xhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/layout_widget_month_summary.xml.flat",
-        "source": "com.payalert.app-main-83:/layout/widget_month_summary.xml"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/drawable_widget_status_green.xml.flat",
-        "source": "com.payalert.app-main-83:/drawable/widget_status_green.xml"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/drawable_widget_card_background.xml.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/drawable/widget_card_background.xml"
     },
     {
-        "merged": "com.payalert.app-debug-81:/drawable_ic_launcher_background.png.flat",
-        "source": "com.payalert.app-main-83:/drawable/ic_launcher_background.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-xxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.payalert.app-main-83:/mipmap-mdpi/ic_launcher.png"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.payalert.app-debug-81:/xml_month_summary_widget_info.xml.flat",
-        "source": "com.payalert.app-main-83:/xml/month_summary_widget_info.xml"
+        "merged": "com.adrianrol87.payalert.app-debug-81:/layout_widget_month_summary.xml.flat",
+        "source": "com.adrianrol87.payalert.app-main-83:/layout/widget_month_summary.xml"
     }
 ]

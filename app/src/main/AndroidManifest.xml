@@ -15,11 +15,10 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-1404008250068138~2252136110" />
         <receiver
-            android:name=".notifications.NotificationActionReceiver"
+            android:name="com.payalert.app.notifications.NotificationActionReceiver"
             android:exported="false" />
         <receiver
-            android:name=".widget.MonthSummaryWidgetProvider"
-            android:enabled="false"
+            android:name="com.payalert.app.widget.MonthSummaryWidgetProvider"
             android:exported="true"
             android:label="@string/widget_upcoming_title"
             android:permission="android.permission.BIND_APPWIDGET">
@@ -32,8 +31,7 @@
                 android:resource="@xml/month_summary_widget_info" />
         </receiver>
         <receiver
-            android:name=".widget.NextPaymentWidgetProvider"
-            android:enabled="false"
+            android:name="com.payalert.app.widget.NextPaymentWidgetProvider"
             android:exported="true"
             android:label="@string/widget_next_title"
             android:permission="android.permission.BIND_APPWIDGET">
@@ -46,7 +44,7 @@
                 android:resource="@xml/next_payment_widget_info" />
         </receiver>
         <activity
-            android:name=".MainActivity"
+            android:name="com.payalert.app.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.PayAlert.Starting">
             <intent-filter>

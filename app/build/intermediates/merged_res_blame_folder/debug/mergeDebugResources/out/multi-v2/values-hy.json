@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.payalert.app-mergeDebugResources-79:/values-hy/values-hy.xml",
+            "outputFile": "com.adrianrol87.payalert.app-mergeDebugResources-79:/values-hy/values-hy.xml",
             "map": [
                 {
                     "source": "C:\\Users\\adrianrol87\\.gradle\\caches\\9.0.0\\transforms\\ce1faee4daa76aad7e821e39436966af\\transformed\\play-services-ads-23.6.0\\res\\values-hy\\values.xml",

@@ -16,4 +16,6 @@
     <string name="widget_due_soon_label">Por vencer</string>
     <string name="widget_overdue_label">Vencidas</string>
     <string name="widget_total_debt_label">Deuda total</string>
+    <string name="widget_pro_locked_title">Disponible en PayAlert Pro</string>
+    <string name="widget_pro_locked_message">Activa Pro en la app para usar este widget.</string>
 </resources>

@@ -12,10 +12,12 @@ import android.graphics.BitmapFactory
 import android.view.View
 import android.widget.RemoteViews
 import com.payalert.app.MainActivity
-import com.payalert.app.R
+import com.adrianrol87.payalert.R
 import com.payalert.app.data.CardsRepository
+import com.payalert.app.data.ProAccessRepository
 import com.payalert.app.data.StatusStyle
 import com.payalert.app.ui.AssetImageResolver
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
 import java.io.IOException
 import java.text.NumberFormat
@@ -74,32 +76,28 @@ object PayAlertWidgetRenderer {
     }
 
     fun syncAvailability(context: Context, isPro: Boolean) {
-        val packageManager = context.packageManager
-        val newState = if (isPro) {
-            PackageManager.COMPONENT_ENABLED_STATE_ENABLED
-        } else {
-            PackageManager.COMPONENT_ENABLED_STATE_DISABLED
-        }
-
-        listOf(
-            ComponentName(context, NextPaymentWidgetProvider::class.java),
-            ComponentName(context, MonthSummaryWidgetProvider::class.java),
-        ).forEach { componentName ->
-            packageManager.setComponentEnabledSetting(
-                componentName,
-                newState,
-                PackageManager.DONT_KILL_APP,
-            )
-        }
-
         if (isPro) {
             updateAllWidgets(context)
         }
     }
 
     fun buildNextPaymentRemoteViews(context: Context): RemoteViews {
-        val cards = runBlocking { CardsRepository(context).getCards() }
         val remoteViews = RemoteViews(context.packageName, R.layout.widget_next_payment)
+        val isPro = runBlocking { ProAccessRepository(context).isPro.first() }
+
+        if (!isPro) {
+            remoteViews.setOnClickPendingIntent(R.id.widget_next_root, launchAppPendingIntent(context))
+            remoteViews.setTextViewText(R.id.widget_next_title, context.getString(R.string.widget_next_title))
+            remoteViews.setViewVisibility(R.id.widget_next_card_thumb, View.GONE)
+            remoteViews.setTextViewText(R.id.widget_next_bank, context.getString(R.string.widget_pro_locked_title))
+            remoteViews.setTextViewText(R.id.widget_next_due, context.getString(R.string.widget_pro_locked_message))
+            remoteViews.setTextViewText(R.id.widget_next_amount, context.getString(R.string.widget_enjoy_message))
+            remoteViews.setTextViewText(R.id.widget_next_status, "PRO")
+            remoteViews.setImageViewResource(R.id.widget_next_status_dot, R.drawable.widget_status_orange)
+            return remoteViews
+        }
+
+        val cards = runBlocking { CardsRepository(context).getCards() }
         val nextCard = cards
             .filterNot { it.isPaid }
             .minByOrNull { it.dueDate }
@@ -151,8 +149,25 @@ object PayAlertWidgetRenderer {
     }
 
     fun buildMonthSummaryRemoteViews(context: Context): RemoteViews {
-        val cards = runBlocking { CardsRepository(context).getCards() }
         val remoteViews = RemoteViews(context.packageName, R.layout.widget_month_summary)
+        val isPro = runBlocking { ProAccessRepository(context).isPro.first() }
+
+        if (!isPro) {
+            remoteViews.setOnClickPendingIntent(R.id.widget_summary_root, launchAppPendingIntent(context))
+            remoteViews.setTextViewText(R.id.widget_summary_title, context.getString(R.string.widget_upcoming_title))
+            remoteViews.setTextViewText(R.id.widget_summary_due_count, "--")
+            remoteViews.setTextViewText(R.id.widget_summary_paid_count, "--")
+            remoteViews.setTextViewText(R.id.widget_summary_overdue_count, "--")
+            remoteViews.setTextViewText(R.id.widget_summary_total_debt, context.getString(R.string.widget_pro_locked_title))
+            remoteViews.setViewVisibility(R.id.widget_summary_empty, View.VISIBLE)
+            remoteViews.setTextViewText(R.id.widget_summary_empty, context.getString(R.string.widget_pro_locked_message))
+            bindUpcomingRow(remoteViews, 1, null, context)
+            bindUpcomingRow(remoteViews, 2, null, context)
+            bindUpcomingRow(remoteViews, 3, null, context)
+            return remoteViews
+        }
+
+        val cards = runBlocking { CardsRepository(context).getCards() }
         val activeCards = cards.filterNot { it.isPaid }
         val nextCards = cards
             .filterNot { it.isPaid }

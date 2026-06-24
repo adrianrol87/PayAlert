@@ -942,7 +942,7 @@ private fun PayAlertSplashOverlay() {
             verticalArrangement = Arrangement.spacedBy(18.dp),
         ) {
             Image(
-                painter = painterResource(id = com.payalert.app.R.drawable.ic_launcher_background),
+                painter = painterResource(id = com.adrianrol87.payalert.R.drawable.ic_launcher_background),
                 contentDescription = "PayAlert",
                 modifier = Modifier.size(210.dp),
                 contentScale = ContentScale.Fit,
@@ -1058,7 +1058,7 @@ private fun OnboardingPage(slide: OnboardingSlide) {
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Image(
-            painter = painterResource(id = com.payalert.app.R.drawable.ic_launcher_foreground),
+            painter = painterResource(id = com.adrianrol87.payalert.R.drawable.ic_launcher_foreground),
             contentDescription = null,
             modifier = Modifier.size(120.dp),
             contentScale = ContentScale.Fit,

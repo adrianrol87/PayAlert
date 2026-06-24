@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.payalert.app-mergeDebugResources-79:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.adrianrol87.payalert.app-mergeDebugResources-79:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\adrianrol87\\.gradle\\caches\\9.0.0\\transforms\\bd570fb644126cf1e2970cb96c181ca6\\transformed\\core-splashscreen-1.0.1\\res\\values-night-v8\\values-night-v8.xml",
