@@ -119,6 +119,8 @@ import com.google.android.play.core.review.ReviewManagerFactory
 import com.google.android.play.core.review.ReviewException
 import com.payalert.app.ads.AdMobConfig
 import com.payalert.app.ads.InterstitialAdController
+import com.payalert.app.billing.PayAlertBillingManager
+import com.payalert.app.billing.ProBillingUiState
 import com.payalert.app.data.AppPreferencesRepository
 import com.payalert.app.data.BankCatalog
 import com.payalert.app.data.CardsRepository
@@ -231,6 +233,9 @@ private fun PayAlertAppContent(
     val notificationSettingsRepository = remember(context) { NotificationSettingsRepository(context) }
     val onboardingRepository = remember(context) { OnboardingRepository(context) }
     val proAccessRepository = remember(context) { ProAccessRepository(context) }
+    val billingManager = remember(context, proAccessRepository) {
+        PayAlertBillingManager(context.applicationContext, proAccessRepository)
+    }
     val notificationScheduler = remember(context) { NotificationScheduler(context) }
     val lifecycleOwner = LocalLifecycleOwner.current
     val scope = rememberCoroutineScope()
@@ -253,6 +258,7 @@ private fun PayAlertAppContent(
     val isPro by produceState(initialValue = false, proAccessRepository) {
         proAccessRepository.isPro.collect { value = it }
     }
+    val billingUiState by billingManager.uiState.collectAsState()
     LaunchedEffect(isPro) {
         PayAlertWidgetRenderer.syncAvailability(context, isPro)
     }
@@ -296,6 +302,13 @@ private fun PayAlertAppContent(
         notificationPermissionGranted = granted
     }
 
+    DisposableEffect(billingManager) {
+        billingManager.start()
+        onDispose {
+            billingManager.dispose()
+        }
+    }
+
     LaunchedEffect(cards, notificationSettings) {
         notificationScheduler.rescheduleAll(cards, notificationSettings)
     }
@@ -314,6 +327,7 @@ private fun PayAlertAppContent(
                         repository.saveCards(normalizedCards)
                     }
                 }
+                billingManager.refreshPurchases()
             }
         }
         lifecycleOwner.lifecycle.addObserver(observer)
@@ -623,15 +637,14 @@ private fun PayAlertAppContent(
                 FullScreenMenuOverlay {
                     ProPanel(
                         isPro = isPro,
-                        onUnlockPreview = {
-                            scope.launch {
-                                proAccessRepository.setPreviewUnlocked(true)
+                        billingUiState = billingUiState,
+                        onPurchase = {
+                            activity?.let { currentActivity ->
+                                billingManager.launchPurchase(currentActivity)
                             }
                         },
-                        onDisablePreview = {
-                            scope.launch {
-                                proAccessRepository.setPreviewUnlocked(false)
-                            }
+                        onRestorePurchase = {
+                            billingManager.restorePurchases()
                         },
                         onClose = { showProPanel = false },
                     )
@@ -1284,8 +1297,9 @@ private fun HomeDashboard(
 @Composable
 private fun ProPanel(
     isPro: Boolean,
-    onUnlockPreview: () -> Unit,
-    onDisablePreview: () -> Unit,
+    billingUiState: ProBillingUiState,
+    onPurchase: () -> Unit,
+    onRestorePurchase: () -> Unit,
     onClose: () -> Unit,
 ) {
     Surface(
@@ -1333,13 +1347,13 @@ private fun ProPanel(
                         .padding(18.dp),
                     verticalArrangement = Arrangement.spacedBy(12.dp),
                 ) {
-                    Text(Monetization.proPriceLabel, style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
+                    Text(billingUiState.priceLabel, style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
                     Text("Pago unico. Sin suscripcion mensual.", color = Color(0xFF64748B))
 
                     ProBenefit("Tarjetas ilimitadas")
                     ProBenefit("Widgets de PayAlert solo para Pro")
                     ProBenefit("Vista mas premium y enfocada en deuda")
-                    ProBenefit("Desbloqueo listo para conectar a compra real")
+                    ProBenefit("Restaurar compra desde Google Play")
                 }
             }
 
@@ -1357,35 +1371,71 @@ private fun ProPanel(
                 ) {
                     Icon(Icons.Filled.Lock, contentDescription = null, tint = Accent)
                     Text(
-                        "Tu cuenta de developer aun no queda aprobada, asi que por ahora esto funciona en modo vista previa local. La UI, el gating y la experiencia quedan listos; luego solo conectamos Google Play Billing.",
+                        "PayAlert Pro usa una compra unica desde Google Play. Para probarla, sube la app al track interno y crea el producto en Play Console con el mismo ID configurado en el codigo.",
                         color = Color(0xFF24415C),
                         style = MaterialTheme.typography.bodySmall,
                     )
                 }
             }
 
-            if (!isPro) {
-                Button(onClick = onUnlockPreview, modifier = Modifier.fillMaxWidth()) {
-                    Text("Activar vista previa Pro")
-                }
-            } else {
-                Button(onClick = onDisablePreview, modifier = Modifier.fillMaxWidth()) {
-                    Text("Volver a Free")
+            billingUiState.message?.let { message ->
+                Surface(
+                    shape = RoundedCornerShape(18.dp),
+                    color = Color(0xFFF8FAFC),
+                    tonalElevation = 0.dp,
+                ) {
+                    Text(
+                        text = message,
+                        color = Color(0xFF475569),
+                        style = MaterialTheme.typography.bodySmall,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(14.dp),
+                    )
                 }
             }
 
-            Text(
-                "Cuando te aprueben la cuenta, aqui mismo conectamos compra real, restaurar compra y verificacion.",
-                color = Color(0xFF64748B),
-                textAlign = TextAlign.Center,
-                style = MaterialTheme.typography.bodySmall,
-                modifier = Modifier.fillMaxWidth(),
+            if (!isPro) {
+                Button(
+                    onClick = onPurchase,
+                    modifier = Modifier.fillMaxWidth(),
+                    enabled = billingUiState.isReady && !billingUiState.isBusy,
+                ) {
+                    Text(if (billingUiState.isBusy) "Abriendo Google Play..." else "Comprar PayAlert Pro")
+                }
+            } else {
+                AssistChip(
+                    onClick = {},
+                    label = { Text("Tu compra Pro esta activa") },
+                )
+            }
+
+            OutlinedActionButton(
+                text = "Restaurar compra",
+                onClick = onRestorePurchase,
             )
 
             TextButton(onClick = onClose, modifier = Modifier.fillMaxWidth()) {
                 Text("Cerrar")
             }
         }
+    }
+}
+
+@Composable
+private fun OutlinedActionButton(
+    text: String,
+    onClick: () -> Unit,
+) {
+    Button(
+        onClick = onClick,
+        modifier = Modifier.fillMaxWidth(),
+        colors = ButtonDefaults.buttonColors(
+            containerColor = Color(0xFFEFF6FF),
+            contentColor = Accent,
+        ),
+    ) {
+        Text(text)
     }
 }
 

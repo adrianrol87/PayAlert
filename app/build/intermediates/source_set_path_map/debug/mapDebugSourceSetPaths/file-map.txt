@@ -32,38 +32,38 @@ com.payalert.app-datastore-core-release-30 C:\Users\adrianrol87\.gradle\caches\9
 com.payalert.app-room-ktx-2.5.0-31 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\61832f9e0b50e01a479ffe72139edfa6\transformed\room-ktx-2.5.0\res
 com.payalert.app-fragment-1.5.4-32 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\67767a289ffe6dd00a6298b6da6f1d16\transformed\fragment-1.5.4\res
 com.payalert.app-material-ripple-release-33 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\679fd72d2df1f9ff1e2b42d397318da1\transformed\material-ripple-release\res
-com.payalert.app-play-services-base-18.0.0-34 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\69651fea4584743c97c5c8f50cbaebc9\transformed\play-services-base-18.0.0\res
-com.payalert.app-navigation-compose-2.8.0-35 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\6aedd466734bb9a58d984d341d4dd5eb\transformed\navigation-compose-2.8.0\res
-com.payalert.app-material-icons-extended-release-36 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\6cf5ef5fd2e49bd8f938edee9dd02b8c\transformed\material-icons-extended-release\res
-com.payalert.app-navigation-common-ktx-2.8.0-37 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\6d475eb86b8395504eb52a14a276d967\transformed\navigation-common-ktx-2.8.0\res
-com.payalert.app-sqlite-2.3.0-38 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\6d6da14f0bf13bf869e6bd6bc688d847\transformed\sqlite-2.3.0\res
-com.payalert.app-sqlite-framework-2.3.0-39 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\6d832521c5f0ec359c699e59229e2699\transformed\sqlite-framework-2.3.0\res
-com.payalert.app-play-services-ads-lite-23.6.0-40 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\7a15bd2476e8fca47be6cdccf350873e\transformed\play-services-ads-lite-23.6.0\res
-com.payalert.app-datastore-release-41 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\877aa4529ce414512b62da5c42048d6f\transformed\datastore-release\res
-com.payalert.app-startup-runtime-1.1.1-42 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\89343f5c5159a4b2c966669366890d2b\transformed\startup-runtime-1.1.1\res
-com.payalert.app-core-ktx-1.13.1-43 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\9b0ad4e5b036cfd3c100f4c42e3a014a\transformed\core-ktx-1.13.1\res
-com.payalert.app-room-runtime-2.5.0-44 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\a1e09d6ed858958c029aa40ff31b3ffd\transformed\room-runtime-2.5.0\res
-com.payalert.app-ui-graphics-release-45 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\a23e4b147b6825e1444c394881fe346a\transformed\ui-graphics-release\res
-com.payalert.app-datastore-preferences-release-46 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\a9077654e1fb4cb5021cdeca915ad7ee\transformed\datastore-preferences-release\res
-com.payalert.app-foundation-layout-release-47 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\ae927dbfb01c9d69d4fad21ec7f996d2\transformed\foundation-layout-release\res
-com.payalert.app-ads-adservices-java-1.0.0-beta05-48 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\b2419d1333c7c309dad3b4173c25320d\transformed\ads-adservices-java-1.0.0-beta05\res
-com.payalert.app-browser-1.8.0-49 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\b3350660fc4008c52e0755e95779542c\transformed\browser-1.8.0\res
-com.payalert.app-ui-text-release-50 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\b65ac7ac2e59137fb8aba2de93f6a177\transformed\ui-text-release\res
-com.payalert.app-core-splashscreen-1.0.1-51 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\bd570fb644126cf1e2970cb96c181ca6\transformed\core-splashscreen-1.0.1\res
-com.payalert.app-appcompat-1.7.0-52 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c0a4ce5cf5d278c974f0922858288196\transformed\appcompat-1.7.0\res
-com.payalert.app-ui-release-53 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c259db59c3a3473f5d7f482d7f7cfe93\transformed\ui-release\res
-com.payalert.app-ui-unit-release-54 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c2f7a79422c21524c604f694b7b7772f\transformed\ui-unit-release\res
-com.payalert.app-core-common-2.0.4-55 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c4a220b5f53c5ae5e676aa988ac58126\transformed\core-common-2.0.4\res
-com.payalert.app-lifecycle-viewmodel-compose-release-56 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c61cbf4add75ee8c3e2222e018038d39\transformed\lifecycle-viewmodel-compose-release\res
-com.payalert.app-core-runtime-2.2.0-57 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c7fb648bcb643bf14b3c006bbe69f54c\transformed\core-runtime-2.2.0\res
-com.payalert.app-profileinstaller-1.3.1-58 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\cbd06524007b5682667bbfc457c6e81a\transformed\profileinstaller-1.3.1\res
-com.payalert.app-graphics-path-1.0.1-59 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\cd1136fc17af465d1ea9e30404e79f74\transformed\graphics-path-1.0.1\res
-com.payalert.app-lifecycle-livedata-core-ktx-2.8.5-60 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\ce107ee954bea17ae349facb8c0e8ed9\transformed\lifecycle-livedata-core-ktx-2.8.5\res
-com.payalert.app-play-services-ads-23.6.0-61 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\ce1faee4daa76aad7e821e39436966af\transformed\play-services-ads-23.6.0\res
-com.payalert.app-lifecycle-livedata-core-2.8.5-62 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\d16318efa94560f33331df388b59d00b\transformed\lifecycle-livedata-core-2.8.5\res
-com.payalert.app-foundation-release-63 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\d75c5bf48ce3af73341c5fa34799c1bb\transformed\foundation-release\res
-com.payalert.app-lifecycle-service-2.8.5-64 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\d87ff2abc2aa38557e3f9f695d38103c\transformed\lifecycle-service-2.8.5\res
-com.payalert.app-navigation-runtime-ktx-2.8.0-65 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\db58510f49afa8fa57056a53a329e652\transformed\navigation-runtime-ktx-2.8.0\res
+com.payalert.app-navigation-compose-2.8.0-34 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\6aedd466734bb9a58d984d341d4dd5eb\transformed\navigation-compose-2.8.0\res
+com.payalert.app-material-icons-extended-release-35 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\6cf5ef5fd2e49bd8f938edee9dd02b8c\transformed\material-icons-extended-release\res
+com.payalert.app-navigation-common-ktx-2.8.0-36 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\6d475eb86b8395504eb52a14a276d967\transformed\navigation-common-ktx-2.8.0\res
+com.payalert.app-sqlite-2.3.0-37 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\6d6da14f0bf13bf869e6bd6bc688d847\transformed\sqlite-2.3.0\res
+com.payalert.app-sqlite-framework-2.3.0-38 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\6d832521c5f0ec359c699e59229e2699\transformed\sqlite-framework-2.3.0\res
+com.payalert.app-play-services-ads-lite-23.6.0-39 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\7a15bd2476e8fca47be6cdccf350873e\transformed\play-services-ads-lite-23.6.0\res
+com.payalert.app-datastore-release-40 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\877aa4529ce414512b62da5c42048d6f\transformed\datastore-release\res
+com.payalert.app-startup-runtime-1.1.1-41 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\89343f5c5159a4b2c966669366890d2b\transformed\startup-runtime-1.1.1\res
+com.payalert.app-core-ktx-1.13.1-42 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\9b0ad4e5b036cfd3c100f4c42e3a014a\transformed\core-ktx-1.13.1\res
+com.payalert.app-room-runtime-2.5.0-43 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\a1e09d6ed858958c029aa40ff31b3ffd\transformed\room-runtime-2.5.0\res
+com.payalert.app-ui-graphics-release-44 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\a23e4b147b6825e1444c394881fe346a\transformed\ui-graphics-release\res
+com.payalert.app-datastore-preferences-release-45 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\a9077654e1fb4cb5021cdeca915ad7ee\transformed\datastore-preferences-release\res
+com.payalert.app-foundation-layout-release-46 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\ae927dbfb01c9d69d4fad21ec7f996d2\transformed\foundation-layout-release\res
+com.payalert.app-ads-adservices-java-1.0.0-beta05-47 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\b2419d1333c7c309dad3b4173c25320d\transformed\ads-adservices-java-1.0.0-beta05\res
+com.payalert.app-browser-1.8.0-48 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\b3350660fc4008c52e0755e95779542c\transformed\browser-1.8.0\res
+com.payalert.app-ui-text-release-49 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\b65ac7ac2e59137fb8aba2de93f6a177\transformed\ui-text-release\res
+com.payalert.app-core-splashscreen-1.0.1-50 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\bd570fb644126cf1e2970cb96c181ca6\transformed\core-splashscreen-1.0.1\res
+com.payalert.app-appcompat-1.7.0-51 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c0a4ce5cf5d278c974f0922858288196\transformed\appcompat-1.7.0\res
+com.payalert.app-ui-release-52 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c259db59c3a3473f5d7f482d7f7cfe93\transformed\ui-release\res
+com.payalert.app-ui-unit-release-53 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c2f7a79422c21524c604f694b7b7772f\transformed\ui-unit-release\res
+com.payalert.app-core-common-2.0.4-54 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c4a220b5f53c5ae5e676aa988ac58126\transformed\core-common-2.0.4\res
+com.payalert.app-lifecycle-viewmodel-compose-release-55 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c61cbf4add75ee8c3e2222e018038d39\transformed\lifecycle-viewmodel-compose-release\res
+com.payalert.app-core-runtime-2.2.0-56 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\c7fb648bcb643bf14b3c006bbe69f54c\transformed\core-runtime-2.2.0\res
+com.payalert.app-profileinstaller-1.3.1-57 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\cbd06524007b5682667bbfc457c6e81a\transformed\profileinstaller-1.3.1\res
+com.payalert.app-graphics-path-1.0.1-58 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\cd1136fc17af465d1ea9e30404e79f74\transformed\graphics-path-1.0.1\res
+com.payalert.app-lifecycle-livedata-core-ktx-2.8.5-59 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\ce107ee954bea17ae349facb8c0e8ed9\transformed\lifecycle-livedata-core-ktx-2.8.5\res
+com.payalert.app-play-services-ads-23.6.0-60 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\ce1faee4daa76aad7e821e39436966af\transformed\play-services-ads-23.6.0\res
+com.payalert.app-lifecycle-livedata-core-2.8.5-61 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\d16318efa94560f33331df388b59d00b\transformed\lifecycle-livedata-core-2.8.5\res
+com.payalert.app-foundation-release-62 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\d75c5bf48ce3af73341c5fa34799c1bb\transformed\foundation-release\res
+com.payalert.app-lifecycle-service-2.8.5-63 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\d87ff2abc2aa38557e3f9f695d38103c\transformed\lifecycle-service-2.8.5\res
+com.payalert.app-navigation-runtime-ktx-2.8.0-64 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\db58510f49afa8fa57056a53a329e652\transformed\navigation-runtime-ktx-2.8.0\res
+com.payalert.app-billing-7.1.1-65 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\e04c27ba0b37a5905bab144b7e4684d2\transformed\billing-7.1.1\res
 com.payalert.app-activity-ktx-1.9.2-66 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\e329611a79e8947837a43d1975072f4c\transformed\activity-ktx-1.9.2\res
 com.payalert.app-animation-release-67 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\e5c61490c641b6515dd6845de98d8ff2\transformed\animation-release\res
 com.payalert.app-ui-tooling-preview-release-68 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\e9b8ef9a8fcf9f77fcb4ba39eaf40b2e\transformed\ui-tooling-preview-release\res
@@ -71,12 +71,13 @@ com.payalert.app-material-release-69 C:\Users\adrianrol87\.gradle\caches\9.0.0\t
 com.payalert.app-animation-core-release-70 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\eef329d496051b61ed8b650d47fad0c6\transformed\animation-core-release\res
 com.payalert.app-work-runtime-ktx-2.9.1-71 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\f0b6dfabb680e300e3e103172335cebe\transformed\work-runtime-ktx-2.9.1\res
 com.payalert.app-work-runtime-2.9.1-72 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\f557e33a0d4e98e16138256b7f3eefec\transformed\work-runtime-2.9.1\res
-com.payalert.app-ui-test-manifest-1.7.3-73 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\fad355537cd8f51020f7b2e75ee54ee2\transformed\ui-test-manifest-1.7.3\res
-com.payalert.app-core-1.13.1-74 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\fc78d2e9d435c4517390258dbd2b0358\transformed\core-1.13.1\res
-com.payalert.app-emoji2-views-helper-1.3.0-75 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\ffbd5f2117b6090e2db94728783e46c7\transformed\emoji2-views-helper-1.3.0\res
-com.payalert.app-resValues-76 C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\build\generated\res\resValues\debug
-com.payalert.app-packageDebugResources-77 C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.payalert.app-packageDebugResources-78 C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.payalert.app-debug-79 C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\build\intermediates\merged_res\debug\mergeDebugResources
-com.payalert.app-debug-80 C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\debug\res
-com.payalert.app-main-81 C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\res
+com.payalert.app-play-services-base-18.5.0-73 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\f6971aa19b66682823c8fdcc2598ef5a\transformed\play-services-base-18.5.0\res
+com.payalert.app-ui-test-manifest-1.7.3-74 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\fad355537cd8f51020f7b2e75ee54ee2\transformed\ui-test-manifest-1.7.3\res
+com.payalert.app-core-1.13.1-75 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\fc78d2e9d435c4517390258dbd2b0358\transformed\core-1.13.1\res
+com.payalert.app-emoji2-views-helper-1.3.0-76 C:\Users\adrianrol87\.gradle\caches\9.0.0\transforms\ffbd5f2117b6090e2db94728783e46c7\transformed\emoji2-views-helper-1.3.0\res
+com.payalert.app-resValues-77 C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\build\generated\res\resValues\debug
+com.payalert.app-packageDebugResources-78 C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.payalert.app-packageDebugResources-79 C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.payalert.app-debug-80 C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.payalert.app-debug-81 C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\debug\res
+com.payalert.app-main-82 C:\Users\adrianrol87\Desktop\PayAlert Android\PayAlert\app\src\main\res

@@ -14,7 +14,8 @@ private val Context.proAccessDataStore by preferencesDataStore(name = "payalert_
 
 object Monetization {
     const val freeCardsLimit = 3
-    const val proPriceLabel = "$149 MXN pago unico"
+    const val proProductId = "payalert_pro_lifetime"
+    const val proPriceLabel = "$39 MXN pago unico"
 }
 
 class ProAccessRepository(private val context: Context) {
@@ -27,16 +28,16 @@ class ProAccessRepository(private val context: Context) {
             }
         }
         .map { preferences ->
-            preferences[Keys.previewUnlocked] ?: false
+            preferences[Keys.proUnlocked] ?: false
         }
 
-    suspend fun setPreviewUnlocked(value: Boolean) {
+    suspend fun setProUnlocked(value: Boolean) {
         context.proAccessDataStore.edit { preferences ->
-            preferences[Keys.previewUnlocked] = value
+            preferences[Keys.proUnlocked] = value
         }
     }
 
     private object Keys {
-        val previewUnlocked = booleanPreferencesKey("pro_preview_unlocked")
+        val proUnlocked = booleanPreferencesKey("pro_unlocked")
     }
 }

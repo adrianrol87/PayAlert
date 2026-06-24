@@ -1057,6 +1057,8 @@ mipmap ic_launcher_background
 mipmap ic_launcher_foreground
 mipmap ic_launcher_monochrome
 mipmap ic_launcher_round
+raw com_android_billingclient_heterodyne_info
+raw com_android_billingclient_registration_info
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -1660,6 +1662,7 @@ styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
 xml backup_rules
+xml com_android_billingclient_phenotype
 xml data_extraction_rules
 xml gma_ad_services_config
 xml image_share_filepaths

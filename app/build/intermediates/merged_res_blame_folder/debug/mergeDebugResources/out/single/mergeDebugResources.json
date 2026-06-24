@@ -1,186 +1,150 @@
 [
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\layout_widget_month_summary.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\layout\\widget_month_summary.xml"
+        "merged": "com.payalert.app-debug-81:/drawable_widget_status_gray.xml.flat",
+        "source": "com.payalert.app-main-83:/drawable/widget_status_gray.xml"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\drawable_widget_badge_rose.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\drawable\\widget_badge_rose.xml"
+        "merged": "com.payalert.app-debug-81:/mipmap-xhdpi_ic_launcher_background.png.flat",
+        "source": "com.payalert.app-main-83:/mipmap-xhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-mdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-mdpi\\ic_launcher_background.png"
+        "merged": "com.payalert.app-debug-81:/mipmap-xxhdpi_ic_launcher_background.png.flat",
+        "source": "com.payalert.app-main-83:/mipmap-xxhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-hdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-hdpi\\ic_launcher_background.png"
+        "merged": "com.payalert.app-debug-81:/mipmap-mdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.payalert.app-main-83:/mipmap-mdpi/ic_launcher_monochrome.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-xxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-xxhdpi\\ic_launcher_background.png"
+        "merged": "com.payalert.app-debug-81:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.payalert.app-main-83:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\drawable_widget_thumb_background.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\drawable\\widget_thumb_background.xml"
+        "merged": "com.payalert.app-debug-81:/xml_next_payment_widget_info.xml.flat",
+        "source": "com.payalert.app-main-83:/xml/next_payment_widget_info.xml"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-xhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-xhdpi\\ic_launcher_background.png"
+        "merged": "com.payalert.app-debug-81:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.payalert.app-main-83:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.payalert.app-debug-81:/mipmap-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "com.payalert.app-main-83:/mipmap-xxxhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\drawable_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\drawable\\ic_launcher_background.png"
+        "merged": "com.payalert.app-debug-81:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.payalert.app-main-83:/mipmap-xhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-xxxhdpi\\ic_launcher_background.png"
+        "merged": "com.payalert.app-debug-81:/layout_widget_next_payment.xml.flat",
+        "source": "com.payalert.app-main-83:/layout/widget_next_payment.xml"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\xml_next_payment_widget_info.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\xml\\next_payment_widget_info.xml"
+        "merged": "com.payalert.app-debug-81:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.payalert.app-main-83:/mipmap-mdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\drawable_widget_badge_blue.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\drawable\\widget_badge_blue.xml"
+        "merged": "com.payalert.app-debug-81:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.payalert.app-main-83:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+        "merged": "com.payalert.app-debug-81:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.payalert.app-main-83:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\drawable_widget_badge_teal.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\drawable\\widget_badge_teal.xml"
+        "merged": "com.payalert.app-debug-81:/mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "com.payalert.app-main-83:/mipmap-mdpi/ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\xml\\data_extraction_rules.xml"
+        "merged": "com.payalert.app-debug-81:/mipmap-hdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.payalert.app-main-83:/mipmap-hdpi/ic_launcher_monochrome.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "com.payalert.app-debug-81:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.payalert.app-main-83:/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\drawable_widget_status_gray.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\drawable\\widget_status_gray.xml"
+        "merged": "com.payalert.app-debug-81:/mipmap-hdpi_ic_launcher_background.png.flat",
+        "source": "com.payalert.app-main-83:/mipmap-hdpi/ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\xml\\backup_rules.xml"
+        "merged": "com.payalert.app-debug-81:/xml_data_extraction_rules.xml.flat",
+        "source": "com.payalert.app-main-83:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-hdpi\\ic_launcher_foreground.png"
+        "merged": "com.payalert.app-debug-81:/mipmap-xhdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.payalert.app-main-83:/mipmap-xhdpi/ic_launcher_monochrome.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-mdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-mdpi\\ic_launcher_foreground.png"
+        "merged": "com.payalert.app-debug-81:/drawable_ic_launcher_transparent_foreground.xml.flat",
+        "source": "com.payalert.app-main-83:/drawable/ic_launcher_transparent_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.payalert.app-debug-81:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.payalert.app-main-83:/mipmap-xxxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\drawable_widget_card_background.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\drawable\\widget_card_background.xml"
+        "merged": "com.payalert.app-debug-81:/drawable_widget_status_orange.xml.flat",
+        "source": "com.payalert.app-main-83:/drawable/widget_status_orange.xml"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\drawable_widget_status_orange.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\drawable\\widget_status_orange.xml"
+        "merged": "com.payalert.app-debug-81:/drawable_ic_launcher_foreground.png.flat",
+        "source": "com.payalert.app-main-83:/drawable/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-xxhdpi_ic_launcher_monochrome.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-xxhdpi\\ic_launcher_monochrome.png"
+        "merged": "com.payalert.app-debug-81:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.payalert.app-main-83:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\drawable_widget_badge_slate.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\drawable\\widget_badge_slate.xml"
+        "merged": "com.payalert.app-debug-81:/drawable_splash_empty_icon.xml.flat",
+        "source": "com.payalert.app-main-83:/drawable/splash_empty_icon.xml"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\layout_widget_next_payment.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\layout\\widget_next_payment.xml"
+        "merged": "com.payalert.app-debug-81:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.payalert.app-main-83:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-hdpi_ic_launcher_monochrome.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-hdpi\\ic_launcher_monochrome.png"
+        "merged": "com.payalert.app-debug-81:/drawable_widget_status_red.xml.flat",
+        "source": "com.payalert.app-main-83:/drawable/widget_status_red.xml"
     },
     {
-        "merged": "com.payalert.app-debug-80:/xml_month_summary_widget_info.xml.flat",
-        "source": "com.payalert.app-main-82:/xml/month_summary_widget_info.xml"
+        "merged": "com.payalert.app-debug-81:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.payalert.app-main-83:/mipmap-xxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-mdpi_ic_launcher_monochrome.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-mdpi\\ic_launcher_monochrome.png"
+        "merged": "com.payalert.app-debug-81:/xml_backup_rules.xml.flat",
+        "source": "com.payalert.app-main-83:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "com.payalert.app-debug-81:/mipmap-xxhdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.payalert.app-main-83:/mipmap-xxhdpi/ic_launcher_monochrome.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-xhdpi_ic_launcher_monochrome.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-xhdpi\\ic_launcher_monochrome.png"
+        "merged": "com.payalert.app-debug-81:/mipmap-xxxhdpi_ic_launcher_monochrome.png.flat",
+        "source": "com.payalert.app-main-83:/mipmap-xxxhdpi/ic_launcher_monochrome.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "com.payalert.app-debug-81:/drawable_widget_card_background.xml.flat",
+        "source": "com.payalert.app-main-83:/drawable/widget_card_background.xml"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-xhdpi\\ic_launcher_foreground.png"
+        "merged": "com.payalert.app-debug-81:/layout_widget_month_summary.xml.flat",
+        "source": "com.payalert.app-main-83:/layout/widget_month_summary.xml"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\drawable_widget_badge_purple.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\drawable\\widget_badge_purple.xml"
+        "merged": "com.payalert.app-debug-81:/drawable_widget_status_green.xml.flat",
+        "source": "com.payalert.app-main-83:/drawable/widget_status_green.xml"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\drawable_splash_empty_icon.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\drawable\\splash_empty_icon.xml"
+        "merged": "com.payalert.app-debug-81:/drawable_ic_launcher_background.png.flat",
+        "source": "com.payalert.app-main-83:/drawable/ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-xxxhdpi_ic_launcher_monochrome.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-xxxhdpi\\ic_launcher_monochrome.png"
+        "merged": "com.payalert.app-debug-81:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.payalert.app-main-83:/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\drawable_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\drawable\\ic_launcher_foreground.png"
-    },
-    {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\drawable_widget_badge_gold.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\drawable\\widget_badge_gold.xml"
-    },
-    {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
-    },
-    {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\drawable_widget_status_green.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\drawable\\widget_status_green.xml"
-    },
-    {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\drawable_widget_status_red.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\drawable\\widget_status_red.xml"
-    },
-    {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\xml_month_summary_widget_info.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\xml\\month_summary_widget_info.xml"
-    },
-    {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\drawable_ic_launcher_transparent_foreground.xml.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\drawable\\ic_launcher_transparent_foreground.xml"
-    },
-    {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-debug-80:\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\adrianrol87\\.gradle\\daemon\\9.0.0\\com.payalert.app-main-82:\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "com.payalert.app-debug-80:/layout_widget_month_summary.xml.flat",
-        "source": "com.payalert.app-main-82:/layout/widget_month_summary.xml"
+        "merged": "com.payalert.app-debug-81:/xml_month_summary_widget_info.xml.flat",
+        "source": "com.payalert.app-main-83:/xml/month_summary_widget_info.xml"
     }
 ]

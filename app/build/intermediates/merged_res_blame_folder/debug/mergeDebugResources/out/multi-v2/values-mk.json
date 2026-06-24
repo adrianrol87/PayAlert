@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.payalert.app-mergeDebugResources-78:/values-mk/values-mk.xml",
+            "outputFile": "com.payalert.app-mergeDebugResources-79:/values-mk/values-mk.xml",
             "map": [
                 {
                     "source": "C:\\Users\\adrianrol87\\.gradle\\caches\\9.0.0\\transforms\\c0a4ce5cf5d278c974f0922858288196\\transformed\\appcompat-1.7.0\\res\\values-mk\\values-mk.xml",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\adrianrol87\\.gradle\\caches\\9.0.0\\transforms\\69651fea4584743c97c5c8f50cbaebc9\\transformed\\play-services-base-18.0.0\\res\\values-mk\\values.xml",
+                    "source": "C:\\Users\\adrianrol87\\.gradle\\caches\\9.0.0\\transforms\\f6971aa19b66682823c8fdcc2598ef5a\\transformed\\play-services-base-18.5.0\\res\\values-mk\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
