@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.adrianrol87.payalert.app-mergeReleaseResources-75:/values-v30/values-v30.xml",
+            "outputFile": "com.adrianrol87.payalert.app-mergeReleaseResources-76:/values-v30/values-v30.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\adrianrol87\\.gradle\\caches\\9.0.0\\transforms\\45e87d0c36460e11e369e703dc35d014\\transformed\\material3-release\\res\\values-v30\\values-v30.xml",
+                    "source": "C:\\Users\\adrianrol87\\.gradle\\caches\\8.13\\transforms\\4eadc98d0d4ec57817687ace1d0f2fc9\\transformed\\material3-release\\res\\values-v30\\values-v30.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

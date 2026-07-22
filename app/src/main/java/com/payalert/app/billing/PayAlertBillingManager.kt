@@ -7,6 +7,7 @@ import com.android.billingclient.api.BillingClient
 import com.android.billingclient.api.BillingClientStateListener
 import com.android.billingclient.api.BillingFlowParams
 import com.android.billingclient.api.BillingResult
+import com.android.billingclient.api.PendingPurchasesParams
 import com.android.billingclient.api.ProductDetails
 import com.android.billingclient.api.Purchase
 import com.android.billingclient.api.PurchasesUpdatedListener
@@ -37,7 +38,12 @@ class PayAlertBillingManager(
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
     private val billingClient: BillingClient = BillingClient.newBuilder(context)
         .setListener(this)
-        .enablePendingPurchases()
+        .enablePendingPurchases(
+            PendingPurchasesParams.newBuilder()
+                .enableOneTimeProducts()
+                .build(),
+        )
+        .enableAutoServiceReconnection()
         .build()
 
     private val _uiState = MutableStateFlow(ProBillingUiState())
@@ -168,13 +174,13 @@ class PayAlertBillingManager(
             )
             .build()
 
-        billingClient.queryProductDetailsAsync(params) { billingResult, productDetailsList ->
+        billingClient.queryProductDetailsAsync(params) { billingResult, productDetailsResult ->
             if (billingResult.responseCode != BillingClient.BillingResponseCode.OK) {
                 showMessage("No se pudo cargar PayAlert Pro desde Google Play.")
                 return@queryProductDetailsAsync
             }
 
-            productDetails = productDetailsList.firstOrNull()
+            productDetails = productDetailsResult.productDetailsList.firstOrNull()
             val localizedPrice = productDetails
                 ?.oneTimePurchaseOfferDetails
                 ?.formattedPrice

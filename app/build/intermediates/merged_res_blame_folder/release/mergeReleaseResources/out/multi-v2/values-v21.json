@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.adrianrol87.payalert.app-mergeReleaseResources-75:/values-v21/values-v21.xml",
+            "outputFile": "com.adrianrol87.payalert.app-mergeReleaseResources-76:/values-v21/values-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\adrianrol87\\.gradle\\caches\\9.0.0\\transforms\\c0a4ce5cf5d278c974f0922858288196\\transformed\\appcompat-1.7.0\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\adrianrol87\\.gradle\\caches\\8.13\\transforms\\e75711a78ca5212616e13799e816b1c9\\transformed\\appcompat-1.7.0\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,19,20,21,22,24,26,27,28,29,30,32,34,36,38,40,42,43,48,50,52,53,54,56,58,59,60,61,62,63,106,109,152,155,158,160,162,164,167,171,174,175,176,179,180,181,182,183,184,187,188,190,192,194,196,200,202,203,204,205,207,211,213,215,216,217,218,219,220,222,223,224,234,235,236,248",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\adrianrol87\\.gradle\\caches\\9.0.0\\transforms\\fc78d2e9d435c4517390258dbd2b0358\\transformed\\core-1.13.1\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\adrianrol87\\.gradle\\caches\\8.13\\transforms\\8b9f0e44088fd765547b8092a976c493\\transformed\\core-1.15.0\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
