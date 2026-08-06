@@ -4,7 +4,7 @@
             "outputFile": "com.adrianrol87.payalert.app-mergeReleaseResources-76:/values-v27/values-v27.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\adrianrol87\\.gradle\\caches\\8.13\\transforms\\b9f4f655bc7a287379b3ce09d27294e1\\transformed\\core-splashscreen-1.0.1\\res\\values-v27\\values-v27.xml",
+                    "source": "C:\\Users\\adrianrol87\\.gradle\\caches\\8.13\\transforms\\d7296ea45a8254eda6e0df7e0b776ab2\\transformed\\core-splashscreen-1.0.1\\res\\values-v27\\values-v27.xml",
                     "from": {
                         "startLines": "2,3,4,7",
                         "startColumns": "4,4,4,4",

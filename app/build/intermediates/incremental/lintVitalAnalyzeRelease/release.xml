@@ -5,9 +5,9 @@
     minSdkVersion="26"
     targetSdkVersion="36.0"
     mergedManifest="build\intermediates\merged_manifest\release\processReleaseMainManifest\AndroidManifest.xml"
-    proguardFiles="build\intermediates\default_proguard_files\global\proguard-android-optimize.txt-8.12.2;proguard-rules.pro"
+    proguardFiles="build\intermediates\default_proguard_files\global\proguard-android-optimize.txt-8.13.2;proguard-rules.pro"
     partialResultsDir="build\intermediates\lint_vital_partial_results\release\lintVitalAnalyzeRelease\out"
-    desugaredMethodsFiles="C:\Users\adrianrol87\.gradle\caches\8.13\transforms\9316ec2e9fcb5c0735669432157e9c9a\transformed\D8BackportedDesugaredMethods.txt">
+    desugaredMethodsFiles="C:\Users\adrianrol87\.gradle\caches\8.13\transforms\f13fe17d9491b92b1ba1df69b2b688c6\transformed\D8BackportedDesugaredMethods.txt">
   <buildFeatures
       namespacing="REQUIRED"/>
   <sourceProviders>
@@ -27,6 +27,6 @@
       applicationId="com.adrianrol87.payalert"
       generatedSourceFolders="build\generated\ap_generated_sources\release\out"
       generatedResourceFolders="build\generated\res\resValues\release"
-      desugaredMethodsFiles="C:\Users\adrianrol87\.gradle\caches\8.13\transforms\9316ec2e9fcb5c0735669432157e9c9a\transformed\D8BackportedDesugaredMethods.txt">
+      desugaredMethodsFiles="C:\Users\adrianrol87\.gradle\caches\8.13\transforms\f13fe17d9491b92b1ba1df69b2b688c6\transformed\D8BackportedDesugaredMethods.txt">
   </artifact>
 </variant>

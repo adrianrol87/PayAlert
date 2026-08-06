@@ -17,6 +17,7 @@ import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.aspectRatio
@@ -89,6 +90,9 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.TextRange
+import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
@@ -146,6 +150,7 @@ import com.payalert.app.ui.theme.StatusOrange
 import com.payalert.app.ui.theme.StatusRed
 import kotlinx.coroutines.launch
 import java.time.LocalDate
+import java.util.Locale
 import java.util.UUID
 import kotlin.math.abs
 
@@ -1838,7 +1843,7 @@ private fun CardRow(
             ) {
                 Column(modifier = Modifier.weight(1f)) {
                     Text(
-                        if (item.hasDebt) "Deuda registrada ${item.totalDebt?.let { "• $${"%.2f".format(it)}" }.orEmpty()}" else "Sin deuda registrada",
+                        if (item.hasDebt) "Deuda registrada ${item.totalDebt?.let { "• ${it.formatCurrencyAmount()}" }.orEmpty()}" else "Sin deuda registrada",
                         style = MaterialTheme.typography.labelMedium,
                         color = Color(0xFF64748B),
                     )
@@ -1854,7 +1859,7 @@ private fun CardRow(
             Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
                 DetailBlock("Corte", item.cutDate.toString())
                 DetailBlock("Pago", item.dueDate.toString())
-                DetailBlock("Restante", item.totalDebt?.let { "$${"%.2f".format(it)}" } ?: "-")
+                DetailBlock("Restante", item.totalDebt?.formatCurrencyAmount() ?: "-")
             }
 
             Row(
@@ -1946,10 +1951,22 @@ private fun AddOrEditCardForm(
     var expandedBank by remember { mutableStateOf(false) }
     var expandedType by remember { mutableStateOf(false) }
     var formState by remember { mutableStateOf(initialState) }
+    var debtFieldValue by remember {
+        mutableStateOf(
+            TextFieldValue(
+                text = initialState.totalDebt,
+                selection = TextRange(initialState.totalDebt.length),
+            ),
+        )
+    }
     var validationMessage by rememberSaveable { mutableStateOf<String?>(null) }
 
     LaunchedEffect(initialState) {
         formState = initialState
+        debtFieldValue = TextFieldValue(
+            text = initialState.totalDebt,
+            selection = TextRange(initialState.totalDebt.length),
+        )
         validationMessage = null
     }
 
@@ -2048,9 +2065,18 @@ private fun AddOrEditCardForm(
                 modifier = Modifier.fillMaxWidth(),
             )
             OutlinedTextField(
-                value = formState.totalDebt,
-                onValueChange = { formState = formState.copy(totalDebt = it) },
+                value = debtFieldValue,
+                onValueChange = { newValue ->
+                    val formattedDebt = formatDebtInput(newValue.text)
+                    debtFieldValue = TextFieldValue(
+                        text = formattedDebt,
+                        selection = TextRange(formattedDebt.length),
+                    )
+                    formState = formState.copy(totalDebt = formattedDebt)
+                },
                 label = { Text("Deuda total") },
+                placeholder = { Text("$0.00") },
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
                 modifier = Modifier.fillMaxWidth(),
             )
             OutlinedTextField(
@@ -2138,7 +2164,7 @@ private fun cardFormStateFromItem(item: CreditCardItem): CardFormState {
         selectedBankId = item.bankCode,
         selectedCardType = item.cardType,
         lastDigits = item.lastDigits,
-        totalDebt = item.totalDebt?.let { "%.2f".format(it) }.orEmpty(),
+        totalDebt = item.totalDebt?.formatCurrencyAmount().orEmpty(),
         cutDateText = item.cutDate.toString(),
         dueDateText = item.dueDate.toString(),
         isPaid = item.isPaid,
@@ -2152,6 +2178,38 @@ private fun String.parseDebtOrNull(): Double? {
 
     return sanitized.toDoubleOrNull()
 }
+
+private fun formatDebtInput(value: String): String {
+    val numericText = value.filter { it.isDigit() || it == '.' }
+    if (numericText.isEmpty()) return ""
+
+    val decimalIndex = numericText.indexOf('.')
+    val integerDigits = (if (decimalIndex >= 0) numericText.substring(0, decimalIndex) else numericText)
+        .filter(Char::isDigit)
+    val fractionDigits = if (decimalIndex >= 0) {
+        numericText.substring(decimalIndex + 1).filter(Char::isDigit).take(2)
+    } else {
+        ""
+    }
+    val normalizedInteger = integerDigits.trimStart('0').ifEmpty { "0" }
+    val groupedInteger = normalizedInteger
+        .reversed()
+        .chunked(3)
+        .joinToString(",")
+        .reversed()
+
+    return buildString {
+        append('$')
+        append(groupedInteger)
+        if (decimalIndex >= 0) {
+            append('.')
+            append(fractionDigits)
+        }
+    }
+}
+
+private fun Double.formatCurrencyAmount(): String =
+    "$" + String.format(Locale.US, "%,.2f", this)
 
 @Composable
 private fun NotificationSettingsPanel(
