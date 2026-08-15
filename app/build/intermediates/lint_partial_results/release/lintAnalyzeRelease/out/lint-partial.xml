@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.13.2" type="partial_results">
+    <map id="NotificationPermission">
+        <entry
+            name="source"
+            boolean="true"/>
+    </map>
+    <map id="UnsafeImplicitIntentLaunch">
+            <map id="actionsSent">
+                    <map id="android.intent.action.VIEW (used to start an activity)">
+                        <location id="0"
+                            file="${:app*release*MAIN*sourceProvider*0*javaDir*0}/com/payalert/app/ui/PayAlertApp.kt"
+                            line="2413"
+                            column="18"
+                            startOffset="96401"
+                            endLine="2413"
+                            endColumn="60"
+                            endOffset="96443"/>
+                    </map>
+            </map>
+    </map>
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="com.payalert.app.MainActivity"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <location id="R.drawable.ic_launcher_transparent_foreground"
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/drawable/ic_launcher_transparent_foreground.xml"
+            line="2"
+            column="1"
+            startOffset="39"
+            endLine="5"
+            endColumn="9"
+            endOffset="251"/>
+        <location id="R.string.widget_active_label"
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="14"
+            column="13"
+            startOffset="773"
+            endLine="14"
+            endColumn="39"
+            endOffset="799"/>
+        <location id="R.string.widget_summary_title"
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="4"
+            column="13"
+            startOffset="129"
+            endLine="4"
+            endColumn="40"
+            endOffset="156"/>
+        <location id="R.xml.backup_rules"
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/xml/backup_rules.xml"
+            line="2"
+            column="1"
+            startOffset="39"
+            endLine="2"
+            endColumn="24"
+            endOffset="62"/>
+        <location id="R.xml.data_extraction_rules"
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/xml/data_extraction_rules.xml"
+            line="2"
+            column="1"
+            startOffset="39"
+            endLine="2"
+            endColumn="26"
+            endOffset="64"/>
+        <entry
+            name="model"
+            string="color[splash_background(U)],drawable[ic_launcher_background(U),ic_launcher_foreground(U),ic_launcher_transparent_foreground(D),splash_empty_icon(U),widget_card_background(U),widget_status_gray(U),widget_status_green(U),widget_status_orange(U),widget_status_red(U)],id[widget_summary_root(U),widget_summary_title(U),widget_summary_logo(D),widget_summary_empty(U),widget_summary_row_1(U),widget_summary_thumb_1(U),widget_summary_digits_1(U),widget_summary_due_1(U),widget_summary_amount_1(U),widget_summary_dot_1(U),widget_summary_row_2(U),widget_summary_thumb_2(U),widget_summary_digits_2(U),widget_summary_due_2(U),widget_summary_amount_2(U),widget_summary_dot_2(U),widget_summary_row_3(U),widget_summary_thumb_3(U),widget_summary_digits_3(U),widget_summary_due_3(U),widget_summary_amount_3(U),widget_summary_dot_3(U),widget_summary_due_count(U),widget_summary_paid_count(U),widget_summary_overdue_count(U),widget_summary_total_debt(U),widget_next_root(U),widget_next_title(U),widget_next_logo(D),widget_next_card_thumb(U),widget_next_bank(U),widget_next_due(U),widget_next_amount(U),widget_next_status_dot(U),widget_next_status(U)],layout[widget_month_summary(U),widget_next_payment(U)],mipmap[ic_launcher(U),ic_launcher_round(U),ic_launcher_background(U),ic_launcher_foreground(U),ic_launcher_monochrome(U)],string[app_name(U),widget_upcoming_title(U),widget_next_title(U),widget_due_soon_label(U),widget_paid_label(U),widget_overdue_label(U),widget_total_debt_label(U),widget_summary_title(D),widget_due_date_format(U),widget_due_short_format(U),widget_due_today_short(U),widget_overdue_short(U),widget_all_clear(U),widget_no_pending_cards(U),widget_enjoy_message(U),widget_no_amount(U),widget_active_label(D),widget_pro_locked_title(U),widget_pro_locked_message(U)],style[Theme_PayAlert(U),Theme_PayAlert_Starting(U),Theme_SplashScreen(R),Theme_AppCompat_DayNight_NoActionBar(R)],xml[month_summary_widget_info(U),next_payment_widget_info(U),backup_rules(D),data_extraction_rules(D)];2d^5^30^7^37^38^39^3a,2e^5^30^7,2f^31^32^33,30^31^32^33,47^4a,48^49^0^4^47,4b^35^2d,4c^36^2e;;;"/>
+    </map>
+
+</incidents>

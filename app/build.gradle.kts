@@ -14,8 +14,8 @@ android {
         applicationId = "com.adrianrol87.payalert"
         minSdk = 26
         targetSdk = 36
-        versionCode = 5
-        versionName = "1.6"
+        versionCode = 7
+        versionName = "1.4"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {

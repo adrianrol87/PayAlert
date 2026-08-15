@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.13.2" type="incidents">
+
+    <incident
+        id="AndroidGradlePluginVersion"
+        severity="warning"
+        message="A newer version of Gradle than 8.13 is available: 8.14.5">
+        <fix-replace
+            description="Update to 8.14.5"
+            oldString="8.13"
+            replacement="8.14.5"
+            priority="0"/>
+        <location
+            file="$HOME/Desktop/PayAlert Android/PayAlert/gradle/wrapper/gradle-wrapper.properties"
+            line="3"
+            column="17"
+            startOffset="81"
+            endLine="3"
+            endColumn="79"
+            endOffset="143"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.13.1 is available: 1.19.0">
+        <fix-replace
+            description="Change to 1.19.0"
+            family="Update versions"
+            oldString="1.13.1"
+            replacement="1.19.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="61"
+            column="20"
+            startOffset="1297"
+            endLine="61"
+            endColumn="51"
+            endOffset="1328"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.7.0 is available: 1.8.0">
+        <fix-replace
+            description="Change to 1.8.0"
+            family="Update versions"
+            oldString="1.7.0"
+            replacement="1.8.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="62"
+            column="20"
+            startOffset="1349"
+            endLine="62"
+            endColumn="56"
+            endOffset="1385"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.8.5 is available: 2.11.0">
+        <fix-replace
+            description="Change to 2.11.0"
+            family="Update versions"
+            oldString="2.8.5"
+            replacement="2.11.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="63"
+            column="20"
+            startOffset="1406"
+            endLine="63"
+            endColumn="68"
+            endOffset="1454"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.activity:activity-compose than 1.9.2 is available: 1.13.0">
+        <fix-replace
+            description="Change to 1.13.0"
+            family="Update versions"
+            oldString="1.9.2"
+            replacement="1.13.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="64"
+            column="20"
+            startOffset="1475"
+            endLine="64"
+            endColumn="62"
+            endOffset="1517"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-splashscreen than 1.0.1 is available: 1.2.0">
+        <fix-replace
+            description="Change to 1.2.0"
+            family="Update versions"
+            oldString="1.0.1"
+            replacement="1.2.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="65"
+            column="20"
+            startOffset="1538"
+            endLine="65"
+            endColumn="59"
+            endOffset="1577"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.navigation:navigation-compose than 2.8.0 is available: 2.9.8">
+        <fix-replace
+            description="Change to 2.9.8"
+            family="Update versions"
+            oldString="2.8.0"
+            replacement="2.9.8"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="66"
+            column="20"
+            startOffset="1598"
+            endLine="66"
+            endColumn="66"
+            endOffset="1644"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.datastore:datastore-preferences than 1.1.1 is available: 1.2.1">
+        <fix-replace
+            description="Change to 1.2.1"
+            family="Update versions"
+            oldString="1.1.1"
+            replacement="1.2.1"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="67"
+            column="20"
+            startOffset="1665"
+            endLine="67"
+            endColumn="68"
+            endOffset="1713"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.work:work-runtime-ktx than 2.9.1 is available: 2.11.2">
+        <fix-replace
+            description="Change to 2.11.2"
+            family="Update versions"
+            oldString="2.9.1"
+            replacement="2.11.2"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="68"
+            column="20"
+            startOffset="1734"
+            endLine="68"
+            endColumn="58"
+            endOffset="1772"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.gms:play-services-ads than 23.6.0 is available: 25.4.0">
+        <fix-replace
+            description="Change to 25.4.0"
+            family="Update versions"
+            oldString="23.6.0"
+            replacement="25.4.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="76"
+            column="20"
+            startOffset="2182"
+            endLine="76"
+            endColumn="69"
+            endOffset="2231"/>
+    </incident>
+
+    <incident
+        id="NewerVersionAvailable"
+        severity="warning"
+        message="A newer version of com.google.code.gson:gson than 2.11.0 is available: 2.14.0">
+        <fix-replace
+            description="Change to 2.14.0"
+            family="Update versions"
+            oldString="2.11.0"
+            replacement="2.14.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="69"
+            column="20"
+            startOffset="1793"
+            endLine="69"
+            endColumn="54"
+            endOffset="1827"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; `SDK_INT` is never &lt; 26">
+        <fix-data conditional="false"/>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*javaDir*0}/com/payalert/app/notifications/NotificationWorker.kt"
+            line="92"
+            column="13"
+            startOffset="3946"
+            endLine="92"
+            endColumn="58"
+            endOffset="3991"/>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="This folder configuration (`v26`) is unnecessary; `minSdkVersion` is 26. Merge all the resources in this folder into `mipmap-anydpi`.">
+        <fix-data file="${:app*release*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26" folderName="mipmap-anydpi" requiresApi="26"/>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26"/>
+    </incident>
+
+    <incident
+        id="UseCompoundDrawables"
+        severity="warning"
+        message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable">
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/layout/widget_next_payment.xml"
+            line="72"
+            column="6"
+            startOffset="2456"
+            endLine="72"
+            endColumn="18"
+            endOffset="2468"/>
+    </incident>
+
+    <incident
+        id="AutoboxingStateCreation"
+        severity="informational"
+        message="Prefer `mutableFloatStateOf` instead of `mutableStateOf`">
+        <fix-replace
+            description="Replace with mutableFloatStateOf"
+            replacement="androidx.compose.runtime.mutableFloatStateOf"
+            shortenNames="true"
+            priority="0">
+            <range
+                file="${:app*release*MAIN*sourceProvider*0*javaDir*0}/com/payalert/app/ui/PayAlertApp.kt"
+                startOffset="69710"
+                endOffset="69724"/>
+        </fix-replace>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*javaDir*0}/com/payalert/app/ui/PayAlertApp.kt"
+            line="1768"
+            column="58"
+            startOffset="69710"
+            endLine="1768"
+            endColumn="72"
+            endOffset="69724"/>
+    </incident>
+
+    <incident
+        id="AutoboxingStateCreation"
+        severity="informational"
+        message="Prefer `mutableFloatStateOf` instead of `mutableStateOf`">
+        <fix-replace
+            description="Replace with mutableFloatStateOf"
+            replacement="androidx.compose.runtime.mutableFloatStateOf"
+            shortenNames="true"
+            priority="0">
+            <range
+                file="${:app*release*MAIN*sourceProvider*0*javaDir*0}/com/payalert/app/ui/PayAlertApp.kt"
+                startOffset="69788"
+                endOffset="69802"/>
+        </fix-replace>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*javaDir*0}/com/payalert/app/ui/PayAlertApp.kt"
+            line="1769"
+            column="58"
+            startOffset="69788"
+            endLine="1769"
+            endColumn="72"
+            endOffset="69802"/>
+    </incident>
+
+    <incident
+        id="DisableBaselineAlignment"
+        severity="warning"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance">
+        <fix-attribute
+            description="Set baselineAligned=&quot;false&quot;"
+            robot="true"
+            independent="true"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="baselineAligned"
+            value="false"/>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/layout/widget_month_summary.xml"
+            line="204"
+            column="6"
+            startOffset="7309"
+            endLine="204"
+            endColumn="18"
+            endOffset="7321"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/ic_launcher_background.png` in densityless folder">
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/drawable/ic_launcher_background.png"/>
+    </incident>
+
+    <incident
+        id="IconLocation"
+        severity="warning"
+        message="Found bitmap drawable `res/drawable/ic_launcher_foreground.png` in densityless folder">
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/drawable/ic_launcher_foreground.png"/>
+    </incident>
+
+    <incident
+        id="IconDuplicates"
+        severity="warning"
+        message="The following unrelated icon files have identical contents: ic_launcher_foreground.png, ic_launcher_monochrome.png">
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/mipmap-hdpi/ic_launcher_monochrome.png"/>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/mipmap-hdpi/ic_launcher_foreground.png"/>
+    </incident>
+
+    <incident
+        id="IconDuplicates"
+        severity="warning"
+        message="The following unrelated icon files have identical contents: ic_launcher_foreground.png, ic_launcher_monochrome.png">
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/mipmap-mdpi/ic_launcher_monochrome.png"/>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/mipmap-mdpi/ic_launcher_foreground.png"/>
+    </incident>
+
+    <incident
+        id="IconDuplicates"
+        severity="warning"
+        message="The following unrelated icon files have identical contents: ic_launcher_foreground.png, ic_launcher_monochrome.png">
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/mipmap-xhdpi/ic_launcher_monochrome.png"/>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/mipmap-xhdpi/ic_launcher_foreground.png"/>
+    </incident>
+
+    <incident
+        id="IconDuplicates"
+        severity="warning"
+        message="The following unrelated icon files have identical contents: ic_launcher_foreground.png, ic_launcher_monochrome.png">
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/mipmap-xxhdpi/ic_launcher_monochrome.png"/>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/mipmap-xxhdpi/ic_launcher_foreground.png"/>
+    </incident>
+
+    <incident
+        id="IconDuplicates"
+        severity="warning"
+        message="The following unrelated icon files have identical contents: ic_launcher_foreground.png, ic_launcher_monochrome.png">
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/mipmap-xxxhdpi/ic_launcher_monochrome.png"/>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/mipmap-xxxhdpi/ic_launcher_foreground.png"/>
+    </incident>
+
+    <incident
+        id="SmallSp"
+        severity="warning"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/layout/widget_month_summary.xml"
+            line="233"
+            column="17"
+            startOffset="8409"
+            endLine="233"
+            endColumn="40"
+            endOffset="8432"/>
+    </incident>
+
+    <incident
+        id="SmallSp"
+        severity="warning"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/layout/widget_month_summary.xml"
+            line="257"
+            column="17"
+            startOffset="9311"
+            endLine="257"
+            endColumn="40"
+            endOffset="9334"/>
+    </incident>
+
+    <incident
+        id="SmallSp"
+        severity="warning"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/layout/widget_month_summary.xml"
+            line="281"
+            column="17"
+            startOffset="10219"
+            endLine="281"
+            endColumn="40"
+            endOffset="10242"/>
+    </incident>
+
+    <incident
+        id="SmallSp"
+        severity="warning"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/layout/widget_month_summary.xml"
+            line="298"
+            column="13"
+            startOffset="10777"
+            endLine="298"
+            endColumn="36"
+            endOffset="10800"/>
+    </incident>
+
+    <incident
+        id="UseKtx"
+        severity="warning"
+        message="Use the KTX extension function `String.toUri` instead?">
+        <fix-replace
+            description="Replace with the toUri extension function"
+            family="Replace with the toUri extension function"
+            robot="true"
+            independent="true"
+            oldString="Uri.parse(url)"
+            replacement="url.toUri()"
+            reformat="value"
+            imports="androidx.core.net.toUri"
+            priority="0">
+            <range
+                file="${:app*release*MAIN*sourceProvider*0*javaDir*0}/com/payalert/app/ui/PayAlertApp.kt"
+                startOffset="96428"
+                endOffset="96442"/>
+        </fix-replace>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*javaDir*0}/com/payalert/app/ui/PayAlertApp.kt"
+            line="2413"
+            column="45"
+            startOffset="96428"
+            endLine="2413"
+            endColumn="59"
+            endOffset="96442"/>
+    </incident>
+
+    <incident
+        id="UseKtx"
+        severity="warning"
+        message="Use the KTX extension function `Bitmap.scale` instead?">
+        <fix-replace
+            description="Replace with the scale extension function"
+            family="Replace with the scale extension function"
+            robot="true"
+            independent="true"
+            oldString="Bitmap.createScaledBitmap(bitmap, 160, 100, true)"
+            replacement="bitmap.scale(160, 100)"
+            reformat="value"
+            imports="androidx.core.graphics.scale"
+            priority="0">
+            <range
+                file="${:app*release*MAIN*sourceProvider*0*javaDir*0}/com/payalert/app/widget/PayAlertWidgets.kt"
+                startOffset="11245"
+                endOffset="11294"/>
+        </fix-replace>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*javaDir*0}/com/payalert/app/widget/PayAlertWidgets.kt"
+            line="252"
+            column="21"
+            startOffset="11245"
+            endLine="252"
+            endColumn="70"
+            endOffset="11294"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/layout/widget_month_summary.xml"
+            line="22"
+            column="10"
+            startOffset="773"
+            endLine="22"
+            endColumn="19"
+            endOffset="782"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/layout/widget_month_summary.xml"
+            line="48"
+            column="10"
+            startOffset="1662"
+            endLine="48"
+            endColumn="19"
+            endOffset="1671"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/layout/widget_month_summary.xml"
+            line="86"
+            column="10"
+            startOffset="3059"
+            endLine="86"
+            endColumn="19"
+            endOffset="3068"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/layout/widget_month_summary.xml"
+            line="103"
+            column="10"
+            startOffset="3651"
+            endLine="103"
+            endColumn="19"
+            endOffset="3660"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/layout/widget_month_summary.xml"
+            line="141"
+            column="10"
+            startOffset="5048"
+            endLine="141"
+            endColumn="19"
+            endOffset="5057"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/layout/widget_month_summary.xml"
+            line="158"
+            column="10"
+            startOffset="5640"
+            endLine="158"
+            endColumn="19"
+            endOffset="5649"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/layout/widget_month_summary.xml"
+            line="196"
+            column="10"
+            startOffset="7037"
+            endLine="196"
+            endColumn="19"
+            endOffset="7046"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/layout/widget_next_payment.xml"
+            line="22"
+            column="10"
+            startOffset="767"
+            endLine="22"
+            endColumn="19"
+            endOffset="776"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/layout/widget_next_payment.xml"
+            line="37"
+            column="10"
+            startOffset="1273"
+            endLine="37"
+            endColumn="19"
+            endOffset="1282"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/layout/widget_next_payment.xml"
+            line="79"
+            column="10"
+            startOffset="2692"
+            endLine="79"
+            endColumn="19"
+            endOffset="2701"/>
+    </incident>
+
+    <incident
+        id="RelativeOverlap"
+        severity="warning"
+        message="`@id/widget_summary_title` can overlap `@id/widget_summary_logo` if @id/widget_summary_title grows due to localized text expansion">
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/layout/widget_month_summary.xml"
+            line="14"
+            column="10"
+            startOffset="477"
+            endLine="14"
+            endColumn="18"
+            endOffset="485"/>
+    </incident>
+
+    <incident
+        id="RelativeOverlap"
+        severity="warning"
+        message="`@id/widget_next_title` can overlap `@id/widget_next_logo` if @id/widget_next_title grows due to localized text expansion">
+        <location
+            file="${:app*release*MAIN*sourceProvider*0*resDir*0}/layout/widget_next_payment.xml"
+            line="14"
+            column="10"
+            startOffset="474"
+            endLine="14"
+            endColumn="18"
+            endOffset="482"/>
+    </incident>
+
+</incidents>
